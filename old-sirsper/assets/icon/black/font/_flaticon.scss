@@ -1,0 +1,439 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:16
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-3d-design:before { content: "\f100"; }
+.flaticon-add-anchor-point:before { content: "\f101"; }
+.flaticon-add-arrow:before { content: "\f102"; }
+.flaticon-add-text:before { content: "\f103"; }
+.flaticon-agenda-with-bookmark:before { content: "\f104"; }
+.flaticon-ai-file:before { content: "\f105"; }
+.flaticon-align-center:before { content: "\f106"; }
+.flaticon-align-to-left:before { content: "\f107"; }
+.flaticon-align-to-right:before { content: "\f108"; }
+.flaticon-align-tool:before { content: "\f109"; }
+.flaticon-align-top:before { content: "\f10a"; }
+.flaticon-anchor-point:before { content: "\f10b"; }
+.flaticon-arrow-and-a-dot:before { content: "\f10c"; }
+.flaticon-artboard-with-paint:before { content: "\f10d"; }
+.flaticon-artist-sketchbook:before { content: "\f10e"; }
+.flaticon-attachment-clip:before { content: "\f10f"; }
+.flaticon-bend-tool:before { content: "\f110"; }
+.flaticon-bended-arrow:before { content: "\f111"; }
+.flaticon-blackboard-with-chalk:before { content: "\f112"; }
+.flaticon-blank-sheet:before { content: "\f113"; }
+.flaticon-break-apart:before { content: "\f114"; }
+.flaticon-browser-grid:before { content: "\f115"; }
+.flaticon-browser-window:before { content: "\f116"; }
+.flaticon-brush-and-pencil:before { content: "\f117"; }
+.flaticon-brush-stroke:before { content: "\f118"; }
+.flaticon-butt-cap:before { content: "\f119"; }
+.flaticon-calligraphy-signature:before { content: "\f11a"; }
+.flaticon-camera-shutter:before { content: "\f11b"; }
+.flaticon-cancel-sticker:before { content: "\f11c"; }
+.flaticon-capital-letters:before { content: "\f11d"; }
+.flaticon-cd-record:before { content: "\f11e"; }
+.flaticon-center-align:before { content: "\f11f"; }
+.flaticon-center-object:before { content: "\f120"; }
+.flaticon-center-paragraph:before { content: "\f121"; }
+.flaticon-circular-points:before { content: "\f122"; }
+.flaticon-circular-ruler:before { content: "\f123"; }
+.flaticon-cmyk-keys:before { content: "\f124"; }
+.flaticon-color-dropper:before { content: "\f125"; }
+.flaticon-color-samples:before { content: "\f126"; }
+.flaticon-combine-squares:before { content: "\f127"; }
+.flaticon-compass-for-drawing:before { content: "\f128"; }
+.flaticon-convert-point-tool:before { content: "\f129"; }
+.flaticon-crop-tool:before { content: "\f12a"; }
+.flaticon-cross-arrows:before { content: "\f12b"; }
+.flaticon-cube-design:before { content: "\f12c"; }
+.flaticon-cube-side:before { content: "\f12d"; }
+.flaticon-cut-out:before { content: "\f12e"; }
+.flaticon-dart-board:before { content: "\f12f"; }
+.flaticon-designing-tool:before { content: "\f130"; }
+.flaticon-desktop-application:before { content: "\f131"; }
+.flaticon-desktop-lamp-with-desk:before { content: "\f132"; }
+.flaticon-different-shaped-buttons:before { content: "\f133"; }
+.flaticon-digital-brush:before { content: "\f134"; }
+.flaticon-dimensions:before { content: "\f135"; }
+.flaticon-distribute-to-center:before { content: "\f136"; }
+.flaticon-divide-tool:before { content: "\f137"; }
+.flaticon-double-paper-clipbord:before { content: "\f138"; }
+.flaticon-double-pencil:before { content: "\f139"; }
+.flaticon-drawing-crayon:before { content: "\f13a"; }
+.flaticon-drop-with-shine:before { content: "\f13b"; }
+.flaticon-duplicate-cursors:before { content: "\f13c"; }
+.flaticon-electric-light:before { content: "\f13d"; }
+.flaticon-empty-bucket:before { content: "\f13e"; }
+.flaticon-empty-paper:before { content: "\f13f"; }
+.flaticon-envelope-with-paper:before { content: "\f140"; }
+.flaticon-erase-lines:before { content: "\f141"; }
+.flaticon-exclude-squares:before { content: "\f142"; }
+.flaticon-expand-arrow:before { content: "\f143"; }
+.flaticon-expand-document:before { content: "\f144"; }
+.flaticon-expand-object:before { content: "\f145"; }
+.flaticon-favourite-symbol:before { content: "\f146"; }
+.flaticon-fi-file:before { content: "\f147"; }
+.flaticon-fill-bucket:before { content: "\f148"; }
+.flaticon-fit-hands:before { content: "\f149"; }
+.flaticon-five-fingers:before { content: "\f14a"; }
+.flaticon-flip-object:before { content: "\f14b"; }
+.flaticon-focus-square:before { content: "\f14c"; }
+.flaticon-fonts-folder:before { content: "\f14d"; }
+.flaticon-fw-button:before { content: "\f14e"; }
+.flaticon-gel-tube:before { content: "\f14f"; }
+.flaticon-graphic-file:before { content: "\f150"; }
+.flaticon-graphics-layouts:before { content: "\f151"; }
+.flaticon-grid-layout:before { content: "\f152"; }
+.flaticon-hand-over-tablet:before { content: "\f153"; }
+.flaticon-hexagonal:before { content: "\f154"; }
+.flaticon-horizontal-tablet-with-pen:before { content: "\f155"; }
+.flaticon-ink-and-feather:before { content: "\f156"; }
+.flaticon-internet-browser:before { content: "\f157"; }
+.flaticon-intersect-desing:before { content: "\f158"; }
+.flaticon-invert-tool:before { content: "\f159"; }
+.flaticon-join-files-button:before { content: "\f15a"; }
+.flaticon-keyboard-with-wire:before { content: "\f15b"; }
+.flaticon-laptop-with-arrow:before { content: "\f15c"; }
+.flaticon-large-ruler:before { content: "\f15d"; }
+.flaticon-lasso-tool:before { content: "\f15e"; }
+.flaticon-left-alignment-paragraph:before { content: "\f15f"; }
+.flaticon-line-and-marker:before { content: "\f160"; }
+.flaticon-line-swirl:before { content: "\f161"; }
+.flaticon-liner-pencil:before { content: "\f162"; }
+.flaticon-magic-wand:before { content: "\f163"; }
+.flaticon-magnetism-pointing-down:before { content: "\f164"; }
+.flaticon-main-file:before { content: "\f165"; }
+.flaticon-man-studying:before { content: "\f166"; }
+.flaticon-marker-point:before { content: "\f167"; }
+.flaticon-menu-list:before { content: "\f168"; }
+.flaticon-minus-element-back:before { content: "\f169"; }
+.flaticon-minus-element-front:before { content: "\f16a"; }
+.flaticon-miter-join:before { content: "\f16b"; }
+.flaticon-monitor-and-pen:before { content: "\f16c"; }
+.flaticon-monitor-levels:before { content: "\f16d"; }
+.flaticon-mouse-arrow:before { content: "\f16e"; }
+.flaticon-mouse-clicker:before { content: "\f16f"; }
+.flaticon-move-folder:before { content: "\f170"; }
+.flaticon-multiple-arrows:before { content: "\f171"; }
+.flaticon-multiple-files:before { content: "\f172"; }
+.flaticon-multiple-images:before { content: "\f173"; }
+.flaticon-no-spray:before { content: "\f174"; }
+.flaticon-notepad-and-pencil:before { content: "\f175"; }
+.flaticon-office-clip:before { content: "\f176"; }
+.flaticon-office-notepad:before { content: "\f177"; }
+.flaticon-office-pin:before { content: "\f178"; }
+.flaticon-open-paint-bucket:before { content: "\f179"; }
+.flaticon-open-round-scissors:before { content: "\f17a"; }
+.flaticon-paint-brush-stroke:before { content: "\f17b"; }
+.flaticon-paint-brush-tool:before { content: "\f17c"; }
+.flaticon-paint-brush-with-drop:before { content: "\f17d"; }
+.flaticon-paint-brush-with-drops:before { content: "\f17e"; }
+.flaticon-paint-drops-on-rectangle:before { content: "\f17f"; }
+.flaticon-paint-spot:before { content: "\f180"; }
+.flaticon-paint-tool:before { content: "\f181"; }
+.flaticon-paint-tube-with-drop:before { content: "\f182"; }
+.flaticon-painting-airbrush:before { content: "\f183"; }
+.flaticon-paper-and-pen:before { content: "\f184"; }
+.flaticon-paragraph-aligment:before { content: "\f185"; }
+.flaticon-pattern-tool:before { content: "\f186"; }
+.flaticon-pen-crop:before { content: "\f187"; }
+.flaticon-pen-pencil-and-eraser:before { content: "\f188"; }
+.flaticon-pen-point:before { content: "\f189"; }
+.flaticon-pencil-drawing:before { content: "\f18a"; }
+.flaticon-pencil-with-eraser:before { content: "\f18b"; }
+.flaticon-piece-of-paper-folded:before { content: "\f18c"; }
+.flaticon-plastic-cutter:before { content: "\f18d"; }
+.flaticon-plus-and-minus-square:before { content: "\f18e"; }
+.flaticon-pointin-tool:before { content: "\f18f"; }
+.flaticon-printing-document:before { content: "\f190"; }
+.flaticon-projecting-cap:before { content: "\f191"; }
+.flaticon-ps-file:before { content: "\f192"; }
+.flaticon-puzzle-piece:before { content: "\f193"; }
+.flaticon-rectangle-ruler:before { content: "\f194"; }
+.flaticon-remove-ancho-point:before { content: "\f195"; }
+.flaticon-resize-text:before { content: "\f196"; }
+.flaticon-responsive-devices:before { content: "\f197"; }
+.flaticon-right-paragraph:before { content: "\f198"; }
+.flaticon-rotate-left:before { content: "\f199"; }
+.flaticon-round-cap:before { content: "\f19a"; }
+.flaticon-round-join:before { content: "\f19b"; }
+.flaticon-round-symbol:before { content: "\f19c"; }
+.flaticon-rubber-eraser:before { content: "\f19d"; }
+.flaticon-ruler-and-pen:before { content: "\f19e"; }
+.flaticon-ruler-and-pencil:before { content: "\f19f"; }
+.flaticon-ruler-and-set-square:before { content: "\f1a0"; }
+.flaticon-sample-color:before { content: "\f1a1"; }
+.flaticon-scale-squares:before { content: "\f1a2"; }
+.flaticon-school-pen:before { content: "\f1a3"; }
+.flaticon-school-writing-tool:before { content: "\f1a4"; }
+.flaticon-select-tool:before { content: "\f1a5"; }
+.flaticon-sharpener:before { content: "\f1a6"; }
+.flaticon-slice-tool:before { content: "\f1a7"; }
+.flaticon-smartphone-tablet-and-television:before { content: "\f1a8"; }
+.flaticon-spatula:before { content: "\f1a9"; }
+.flaticon-spray-can:before { content: "\f1aa"; }
+.flaticon-square-composition:before { content: "\f1ab"; }
+.flaticon-square-image:before { content: "\f1ac"; }
+.flaticon-square-pattern:before { content: "\f1ad"; }
+.flaticon-square-window:before { content: "\f1ae"; }
+.flaticon-strikethrough-text:before { content: "\f1af"; }
+.flaticon-strip-mark:before { content: "\f1b0"; }
+.flaticon-surgeon-scalpel:before { content: "\f1b1"; }
+.flaticon-sync-symbol:before { content: "\f1b2"; }
+.flaticon-target-in-page:before { content: "\f1b3"; }
+.flaticon-text-font:before { content: "\f1b4"; }
+.flaticon-text-tool:before { content: "\f1b5"; }
+.flaticon-text-tool-1:before { content: "\f1b6"; }
+.flaticon-text-tool-2:before { content: "\f1b7"; }
+.flaticon-three-brushes:before { content: "\f1b8"; }
+.flaticon-three-rings:before { content: "\f1b9"; }
+.flaticon-three-squares:before { content: "\f1ba"; }
+.flaticon-triangle-and-circle:before { content: "\f1bb"; }
+.flaticon-two-paint-brusher:before { content: "\f1bc"; }
+.flaticon-unite-squares:before { content: "\f1bd"; }
+.flaticon-university-building:before { content: "\f1be"; }
+.flaticon-user-profile-in-a-square:before { content: "\f1bf"; }
+.flaticon-vector-software:before { content: "\f1c0"; }
+.flaticon-vintage-color-palette:before { content: "\f1c1"; }
+.flaticon-vintage-reading-glasses:before { content: "\f1c2"; }
+.flaticon-visible-status:before { content: "\f1c3"; }
+.flaticon-writing-feather:before { content: "\f1c4"; }
+.flaticon-writing-text:before { content: "\f1c5"; }
+.flaticon-zoom-len:before { content: "\f1c6"; }
+.flaticon-zoom-out-magnifier:before { content: "\f1c7"; }
+    
+    $font-Flaticon-3d-design: "\f100";
+    $font-Flaticon-add-anchor-point: "\f101";
+    $font-Flaticon-add-arrow: "\f102";
+    $font-Flaticon-add-text: "\f103";
+    $font-Flaticon-agenda-with-bookmark: "\f104";
+    $font-Flaticon-ai-file: "\f105";
+    $font-Flaticon-align-center: "\f106";
+    $font-Flaticon-align-to-left: "\f107";
+    $font-Flaticon-align-to-right: "\f108";
+    $font-Flaticon-align-tool: "\f109";
+    $font-Flaticon-align-top: "\f10a";
+    $font-Flaticon-anchor-point: "\f10b";
+    $font-Flaticon-arrow-and-a-dot: "\f10c";
+    $font-Flaticon-artboard-with-paint: "\f10d";
+    $font-Flaticon-artist-sketchbook: "\f10e";
+    $font-Flaticon-attachment-clip: "\f10f";
+    $font-Flaticon-bend-tool: "\f110";
+    $font-Flaticon-bended-arrow: "\f111";
+    $font-Flaticon-blackboard-with-chalk: "\f112";
+    $font-Flaticon-blank-sheet: "\f113";
+    $font-Flaticon-break-apart: "\f114";
+    $font-Flaticon-browser-grid: "\f115";
+    $font-Flaticon-browser-window: "\f116";
+    $font-Flaticon-brush-and-pencil: "\f117";
+    $font-Flaticon-brush-stroke: "\f118";
+    $font-Flaticon-butt-cap: "\f119";
+    $font-Flaticon-calligraphy-signature: "\f11a";
+    $font-Flaticon-camera-shutter: "\f11b";
+    $font-Flaticon-cancel-sticker: "\f11c";
+    $font-Flaticon-capital-letters: "\f11d";
+    $font-Flaticon-cd-record: "\f11e";
+    $font-Flaticon-center-align: "\f11f";
+    $font-Flaticon-center-object: "\f120";
+    $font-Flaticon-center-paragraph: "\f121";
+    $font-Flaticon-circular-points: "\f122";
+    $font-Flaticon-circular-ruler: "\f123";
+    $font-Flaticon-cmyk-keys: "\f124";
+    $font-Flaticon-color-dropper: "\f125";
+    $font-Flaticon-color-samples: "\f126";
+    $font-Flaticon-combine-squares: "\f127";
+    $font-Flaticon-compass-for-drawing: "\f128";
+    $font-Flaticon-convert-point-tool: "\f129";
+    $font-Flaticon-crop-tool: "\f12a";
+    $font-Flaticon-cross-arrows: "\f12b";
+    $font-Flaticon-cube-design: "\f12c";
+    $font-Flaticon-cube-side: "\f12d";
+    $font-Flaticon-cut-out: "\f12e";
+    $font-Flaticon-dart-board: "\f12f";
+    $font-Flaticon-designing-tool: "\f130";
+    $font-Flaticon-desktop-application: "\f131";
+    $font-Flaticon-desktop-lamp-with-desk: "\f132";
+    $font-Flaticon-different-shaped-buttons: "\f133";
+    $font-Flaticon-digital-brush: "\f134";
+    $font-Flaticon-dimensions: "\f135";
+    $font-Flaticon-distribute-to-center: "\f136";
+    $font-Flaticon-divide-tool: "\f137";
+    $font-Flaticon-double-paper-clipbord: "\f138";
+    $font-Flaticon-double-pencil: "\f139";
+    $font-Flaticon-drawing-crayon: "\f13a";
+    $font-Flaticon-drop-with-shine: "\f13b";
+    $font-Flaticon-duplicate-cursors: "\f13c";
+    $font-Flaticon-electric-light: "\f13d";
+    $font-Flaticon-empty-bucket: "\f13e";
+    $font-Flaticon-empty-paper: "\f13f";
+    $font-Flaticon-envelope-with-paper: "\f140";
+    $font-Flaticon-erase-lines: "\f141";
+    $font-Flaticon-exclude-squares: "\f142";
+    $font-Flaticon-expand-arrow: "\f143";
+    $font-Flaticon-expand-document: "\f144";
+    $font-Flaticon-expand-object: "\f145";
+    $font-Flaticon-favourite-symbol: "\f146";
+    $font-Flaticon-fi-file: "\f147";
+    $font-Flaticon-fill-bucket: "\f148";
+    $font-Flaticon-fit-hands: "\f149";
+    $font-Flaticon-five-fingers: "\f14a";
+    $font-Flaticon-flip-object: "\f14b";
+    $font-Flaticon-focus-square: "\f14c";
+    $font-Flaticon-fonts-folder: "\f14d";
+    $font-Flaticon-fw-button: "\f14e";
+    $font-Flaticon-gel-tube: "\f14f";
+    $font-Flaticon-graphic-file: "\f150";
+    $font-Flaticon-graphics-layouts: "\f151";
+    $font-Flaticon-grid-layout: "\f152";
+    $font-Flaticon-hand-over-tablet: "\f153";
+    $font-Flaticon-hexagonal: "\f154";
+    $font-Flaticon-horizontal-tablet-with-pen: "\f155";
+    $font-Flaticon-ink-and-feather: "\f156";
+    $font-Flaticon-internet-browser: "\f157";
+    $font-Flaticon-intersect-desing: "\f158";
+    $font-Flaticon-invert-tool: "\f159";
+    $font-Flaticon-join-files-button: "\f15a";
+    $font-Flaticon-keyboard-with-wire: "\f15b";
+    $font-Flaticon-laptop-with-arrow: "\f15c";
+    $font-Flaticon-large-ruler: "\f15d";
+    $font-Flaticon-lasso-tool: "\f15e";
+    $font-Flaticon-left-alignment-paragraph: "\f15f";
+    $font-Flaticon-line-and-marker: "\f160";
+    $font-Flaticon-line-swirl: "\f161";
+    $font-Flaticon-liner-pencil: "\f162";
+    $font-Flaticon-magic-wand: "\f163";
+    $font-Flaticon-magnetism-pointing-down: "\f164";
+    $font-Flaticon-main-file: "\f165";
+    $font-Flaticon-man-studying: "\f166";
+    $font-Flaticon-marker-point: "\f167";
+    $font-Flaticon-menu-list: "\f168";
+    $font-Flaticon-minus-element-back: "\f169";
+    $font-Flaticon-minus-element-front: "\f16a";
+    $font-Flaticon-miter-join: "\f16b";
+    $font-Flaticon-monitor-and-pen: "\f16c";
+    $font-Flaticon-monitor-levels: "\f16d";
+    $font-Flaticon-mouse-arrow: "\f16e";
+    $font-Flaticon-mouse-clicker: "\f16f";
+    $font-Flaticon-move-folder: "\f170";
+    $font-Flaticon-multiple-arrows: "\f171";
+    $font-Flaticon-multiple-files: "\f172";
+    $font-Flaticon-multiple-images: "\f173";
+    $font-Flaticon-no-spray: "\f174";
+    $font-Flaticon-notepad-and-pencil: "\f175";
+    $font-Flaticon-office-clip: "\f176";
+    $font-Flaticon-office-notepad: "\f177";
+    $font-Flaticon-office-pin: "\f178";
+    $font-Flaticon-open-paint-bucket: "\f179";
+    $font-Flaticon-open-round-scissors: "\f17a";
+    $font-Flaticon-paint-brush-stroke: "\f17b";
+    $font-Flaticon-paint-brush-tool: "\f17c";
+    $font-Flaticon-paint-brush-with-drop: "\f17d";
+    $font-Flaticon-paint-brush-with-drops: "\f17e";
+    $font-Flaticon-paint-drops-on-rectangle: "\f17f";
+    $font-Flaticon-paint-spot: "\f180";
+    $font-Flaticon-paint-tool: "\f181";
+    $font-Flaticon-paint-tube-with-drop: "\f182";
+    $font-Flaticon-painting-airbrush: "\f183";
+    $font-Flaticon-paper-and-pen: "\f184";
+    $font-Flaticon-paragraph-aligment: "\f185";
+    $font-Flaticon-pattern-tool: "\f186";
+    $font-Flaticon-pen-crop: "\f187";
+    $font-Flaticon-pen-pencil-and-eraser: "\f188";
+    $font-Flaticon-pen-point: "\f189";
+    $font-Flaticon-pencil-drawing: "\f18a";
+    $font-Flaticon-pencil-with-eraser: "\f18b";
+    $font-Flaticon-piece-of-paper-folded: "\f18c";
+    $font-Flaticon-plastic-cutter: "\f18d";
+    $font-Flaticon-plus-and-minus-square: "\f18e";
+    $font-Flaticon-pointin-tool: "\f18f";
+    $font-Flaticon-printing-document: "\f190";
+    $font-Flaticon-projecting-cap: "\f191";
+    $font-Flaticon-ps-file: "\f192";
+    $font-Flaticon-puzzle-piece: "\f193";
+    $font-Flaticon-rectangle-ruler: "\f194";
+    $font-Flaticon-remove-ancho-point: "\f195";
+    $font-Flaticon-resize-text: "\f196";
+    $font-Flaticon-responsive-devices: "\f197";
+    $font-Flaticon-right-paragraph: "\f198";
+    $font-Flaticon-rotate-left: "\f199";
+    $font-Flaticon-round-cap: "\f19a";
+    $font-Flaticon-round-join: "\f19b";
+    $font-Flaticon-round-symbol: "\f19c";
+    $font-Flaticon-rubber-eraser: "\f19d";
+    $font-Flaticon-ruler-and-pen: "\f19e";
+    $font-Flaticon-ruler-and-pencil: "\f19f";
+    $font-Flaticon-ruler-and-set-square: "\f1a0";
+    $font-Flaticon-sample-color: "\f1a1";
+    $font-Flaticon-scale-squares: "\f1a2";
+    $font-Flaticon-school-pen: "\f1a3";
+    $font-Flaticon-school-writing-tool: "\f1a4";
+    $font-Flaticon-select-tool: "\f1a5";
+    $font-Flaticon-sharpener: "\f1a6";
+    $font-Flaticon-slice-tool: "\f1a7";
+    $font-Flaticon-smartphone-tablet-and-television: "\f1a8";
+    $font-Flaticon-spatula: "\f1a9";
+    $font-Flaticon-spray-can: "\f1aa";
+    $font-Flaticon-square-composition: "\f1ab";
+    $font-Flaticon-square-image: "\f1ac";
+    $font-Flaticon-square-pattern: "\f1ad";
+    $font-Flaticon-square-window: "\f1ae";
+    $font-Flaticon-strikethrough-text: "\f1af";
+    $font-Flaticon-strip-mark: "\f1b0";
+    $font-Flaticon-surgeon-scalpel: "\f1b1";
+    $font-Flaticon-sync-symbol: "\f1b2";
+    $font-Flaticon-target-in-page: "\f1b3";
+    $font-Flaticon-text-font: "\f1b4";
+    $font-Flaticon-text-tool: "\f1b5";
+    $font-Flaticon-text-tool-1: "\f1b6";
+    $font-Flaticon-text-tool-2: "\f1b7";
+    $font-Flaticon-three-brushes: "\f1b8";
+    $font-Flaticon-three-rings: "\f1b9";
+    $font-Flaticon-three-squares: "\f1ba";
+    $font-Flaticon-triangle-and-circle: "\f1bb";
+    $font-Flaticon-two-paint-brusher: "\f1bc";
+    $font-Flaticon-unite-squares: "\f1bd";
+    $font-Flaticon-university-building: "\f1be";
+    $font-Flaticon-user-profile-in-a-square: "\f1bf";
+    $font-Flaticon-vector-software: "\f1c0";
+    $font-Flaticon-vintage-color-palette: "\f1c1";
+    $font-Flaticon-vintage-reading-glasses: "\f1c2";
+    $font-Flaticon-visible-status: "\f1c3";
+    $font-Flaticon-writing-feather: "\f1c4";
+    $font-Flaticon-writing-text: "\f1c5";
+    $font-Flaticon-zoom-len: "\f1c6";
+    $font-Flaticon-zoom-out-magnifier: "\f1c7";

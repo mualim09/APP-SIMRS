@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+}
+*{
+	box-sizing: border-box;
+}
+.kontiner{
+	max-width:1140px;
+	margin:auto;
+	position: relative;
+	min-height: 1px;
+}
+
+.team{
+	min-height: 100vh;
+	background-color:#ffffff; 
+	width: 100%;
+}
+.team h1{
+	font-size: 36px;
+	font-family: open sans;
+	/*font-weight: 700;*/
+	color:#ffffff;
+	margin:0;
+	padding-bottom:60px;
+	text-align: center;
+}
+.team .card{
+	width:25%;
+	float: left;
+	/*padding:0px 15px;*/
+}
+.team .card .box {
+	padding:60px;
+	background: linear-gradient(to right, #199656 , #199656, #199656); /* Standard syntax */
+	background: -webkit-linear-gradient(left, #199656 , #199656, #199656); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #199656, #199656, #199656); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #199656, #199656, #199656); /* For Firefox 3.6 to 15 */
+	border-radius:5px;
+	transition: margin 1s ease,box-shadow 1s ease;
+}
+.team .card .box:hover{
+	margin-top:-15px;
+	box-shadow:0px 0px 40px black;
+}
+.team .card .box img{
+	width:100px;
+	display: block;
+	margin:10px auto;
+	border-radius:50%;
+
+}
+
+.team .card .box h4{
+	font-size: 20px;
+	font-family: open sans;
+	margin:20px 0px 10px;
+	color:#ea5e71;
+	text-align: center;
+	font-weight: 700;
+}
+
+.team .card .box h5{
+	font-size:16px;
+	font-family: open sans;
+	font-weight: 600;
+	color:#b9b9b9;
+	margin:0px 0px 15px;
+	text-align: center;
+}
+.team .card .box p{
+	color:#b9b9b9;
+	font-size: 15px;
+	font-family: open sans;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	padding:0px 20px;
+}
+
+/*responsive*/
+
+@media(max-width: 991px){
+	.team .card{
+		width:50%;
+		margin-bottom:30px;
+	}
+}
+@media(max-width:550px){
+	.team .card{
+		width:100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
