@@ -33,7 +33,7 @@ if (isset($_POST['login'])) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Validation RSKG - Login</title>
+  <title>DPA RSKG - Login</title>
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
   <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/libs/css/style.css">
@@ -59,7 +59,7 @@ if (isset($_POST['login'])) {
     <div class="card ">
       <div class="card-header text-center">
         <a href="index.html">
-          <img class="logo-img" src="assets/images/logo/logo-3.png" alt="logo" width="300px">
+          <img class="logo-img" src="assets/images/logo/logo.png" alt="logo" width="300px">
         </a>
         <span class="splash-description">Silahkan masuk-kan username dan password anda untuk memulai session.</span>
       </div>

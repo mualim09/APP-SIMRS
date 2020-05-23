@@ -2,12 +2,12 @@
 include 'include/restrict.php';
 
 mysql_connect('localhost', 'root', '');
-mysql_select_db('rskg_validation'); 
+mysql_select_db('rskg_dpa'); 
 $result = mysql_query("SELECT * FROM tb_user WHERE username = '$user'");
 $data = mysql_fetch_array($result);
 ?>
 <nav class="navbar navbar-expand-lg bg-white fixed-top">
-  <a class="navbar-brand" href="index.html">Validation</a>
+  <a class="navbar-brand" href="index.html">E-DPA</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

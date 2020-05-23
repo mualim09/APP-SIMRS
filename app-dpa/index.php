@@ -68,14 +68,14 @@ $data = mysql_fetch_array($result);
                     <div class="row">
                       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="section-block">
-                          <h3 class="section-title">My Campaign State</h3>
+                          <h3 class="section-title">Dashboard E-DPA</h3> <a align="right"><?php echo date('d-m-Y'); ?></a>
                         </div>
                       </div>
                       <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="card">
                           <div class="card-body">
                             <h1 class="mb-1">9</h1>
-                            <p>Campaign Invitations</p>
+                            <p>Nota Intern</p>
                           </div>
                         </div>
                       </div>

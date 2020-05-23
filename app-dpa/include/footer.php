@@ -2,7 +2,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" align="center">
-				Copyright © <?php echo date('Y'); ?> Application Validation. All rights reserved. Powered by <a href="https://192.168.55.164" target="_blank">RSKGCARE</a>.
+				Copyright © <?php echo date('Y'); ?> Application DPA <i>(Dokumen | Pelaporan | Akreditasi)</i>. All rights reserved. Powered by <a href="https://192.168.55.164" target="_blank">RSKGCARE</a>.
 			</div>
 		</div>
 	</div>

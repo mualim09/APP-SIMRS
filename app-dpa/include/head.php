@@ -5,7 +5,7 @@
 	<link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/libs/css/style.css">
 	<link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
-	<title>App Validation RSKG</title>
+	<title>App DPA RSKG</title>
 	<link rel="icon" type="assets/image/png" href="assets/images/logo/logo.png"/>
 </head>
 <style type="text/css">
