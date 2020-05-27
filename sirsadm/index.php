@@ -234,7 +234,7 @@ $dashboard_ani = mysql_query("SELECT COUNT(*) AS total_ani FROM tb_ani");
                             <span class="description">Rumah Sakit Khusus Ginjal Ny. R.A. Habibie</span>
                           </div>
                           <div align="center">
-                            <img src="assets/img/all-rs/logo/sirs-adm1.png">
+                            <img src="assets/img/all-rs/rskg.png">
                           </div>
                           <br>
                           <br>

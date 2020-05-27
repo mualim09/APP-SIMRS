@@ -3,7 +3,6 @@ include "include/connection.php";
 $result = mysql_query("SELECT * FROM tb_user WHERE username = '$user'");
 $data = mysql_fetch_array($result);
 ?>
-
 <!doctype html>
 <html lang="en">
 <?php include "include/head.php" ?>
@@ -24,7 +23,7 @@ $data = mysql_fetch_array($result);
                 <div class="page-breadcrumb">
                   <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                      <li class="breadcrumb-item"><a href="index.php?ntf=0" class="breadcrumb-link">Dashboard</a></li>
                       <li class="breadcrumb-item active" aria-current="page">Dashboard Page</li>
                     </ol>
                   </nav>
