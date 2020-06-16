@@ -7,7 +7,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/rskg/header.png">
-	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -19,6 +18,10 @@
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/slicknav.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<style>
 		* {
 			box-sizing: border-box;
@@ -86,7 +89,6 @@
 			}
 		}
 	</style>
-	<!-- LOADER -->
 	<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 	<style type="text/css">
 		.preloader {
@@ -96,7 +98,7 @@
 			width: 100%;
 			height: 100%;
 			z-index: 9999;
-			background-color: #f1f2f3;
+			background-color: #ffff;
 		}
 		.preloader .loading {
 			position: absolute;
@@ -128,11 +130,11 @@
 </head>
 <body>
 	<div class="preloader">
-		<div class="loading">
-			<img src="assets/gif/Ripple.gif" width="100">
-			<p>Loading...</p>
-		</div>
-	</div>
+        <div class="loading">
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
+        </div>
+    </div>
 	<?php include 'include/header.php' ?>
 	<div class="bradcam_area breadcam_bg" style="background-image: url('assets/img/bg-pelayanan/bg-mcu.png'); background-size: 100%; background-position: 50% 50%;">
 		<div class="container">
@@ -324,12 +326,10 @@
 						<li> <i class="flaticon-right"></i> EKG</li>
 						<li> <i class="flaticon-right"></i> RO Thorax PA</li>
 						<li> <i class="flaticon-right"></i> USG Whole Abdomen</li>
-						<!-- <li class="grey"><a href="#" class="button">Sign Up</a></li> -->
 					</ul>
 				</div>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col-lg-12 posts-list">
 				<div class="blog_details">
@@ -350,7 +350,6 @@
 							<br>
 							<font style="color: #ffff">Pengukuran tanda-tanda vital (tekanan darah, pernapasan, denyut nadi, suhu) Pengukuran tinggi dan berat badan, IMT Pemeriksaan fisik</font>
 						</li>
-						<!-- <li class="grey"><a href="#" class="button">Sign Up</a></li> -->
 					</ul>
 				</div>
 				<div class="columns-ginjal">
@@ -381,57 +380,12 @@
 						<li> <i class="flaticon-right"></i> Pemeriksaan dokter terdiri dari:
 							<br><font style="color: grey">Pengukuran tanda-tanda vital (tekanan darah, pernapasan, denyut nadi, suhu) Pengukuran tinggi dan berat badan, IMT Pemeriksaan fisik</font>
 						</li>
-						<!-- <li class="grey"><a href="#" class="button">Sign Up</a></li> -->
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- <section class="team">
-		<div class="kontiner">
-			<h1>Our Team</h1>
-			<div class="card">
-				<div class="box">
-					<img src="assets/pricing/one.jpg" class="circular--square" alt="team img" />
-					<h4>James King</h4>
-					<hr>
-					<h5>Manager</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="box">
-					<img src="assets/pricing/two.jpg" alt="team img" />
-					<h4>James King</h4>
-					<hr>
-					<h5>Manager</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="box">
-					<img src="assets/pricing/three.jpg" alt="team img" />
-					<h4>James King</h4>
-					<hr>
-					<h5>Manager</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="box">
-					<img src="assets/pricing/four.jpg" alt="team img" />
-					<h4>James King</h4>
-					<hr>
-					<h5>Manager</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!--main-->
-	<!-- //main -->
 	<?php include 'include/footer.php' ?>
-	<!-- link that opens popup -->
 	<?php include 'include/jsfile.php'; ?>
 </body>
 </html>

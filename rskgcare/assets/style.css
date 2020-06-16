@@ -1430,7 +1430,7 @@ li {
 .bg-pattern {
     background-attachment: fixed;
     background-position: center center;
-    background-image: url(img/bg-img/bg-pattern.jpg);
+    background-image: url(img/all-rs/bg1.png);
     position: relative;
     background-size: cover;
     z-index: 1;

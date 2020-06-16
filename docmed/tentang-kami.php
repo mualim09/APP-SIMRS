@@ -7,7 +7,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/rskg/header.png">
-	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -20,8 +19,11 @@
 	<link rel="stylesheet" href="assets/css/slicknav.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/pendiri/style.css">
-	<!-- LOADER -->
 	<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<!-- Modal -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<style type="text/css">
 		.preloader {
 			position: fixed;
@@ -30,7 +32,7 @@
 			width: 100%;
 			height: 100%;
 			z-index: 9999;
-			background-color: #f1f2f3;
+			background-color: #ffff;
 		}
 		.preloader .loading {
 			position: absolute;
@@ -50,29 +52,16 @@
 <body>
 	<div class="preloader">
 		<div class="loading">
-			<img src="assets/gif/Ripple.gif" width="100">
-			<p>Loading...</p>
+			<img src="assets/gif/radio.gif">
+			<font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
 		</div>
 	</div>
 	<?php include 'include/header.php' ?>
-	<!-- <div class="bradcam_area breadcam_bg bradcam_overlay">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-12">
-					<div class="bradcam_text">
-						<h3>Profil RSKG</h3>
-						<p><a href="index.php">Beranda</a>/Profil RSKG</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
 	<section class="team-section overlay_skyblue" style="background-image: url('assets/img/banner/banner.png');">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
 					<h1>Pendiri RSKG NY. R.A. Habibie</h1>
-					<!-- <p align="center">RSKG Ny. R.A. Habibie lahir dengan nama Klinik Ginjal Bandung pada tanggal 8 Agustus 1988 dengan 2 buah mesin hemodialisis. Pada tanggal 31 Agustus 1993 nama tersebut diubah menjadi Pelayanan Dialisis Ny. R.A. Habibie sebagai penghormatan dan untuk mengenang Ny. R.A. Tuti Marini Habibie yang sangat membantu pada pendirian Klinik Ginjal Bandung. Tujuan pendirian klinik ini adalah untuk meringankan beban pasien gagal ginjal terutama masyarakat yang tidak mampu.</p> -->
 				</div>
 			</div>
 			<div class="row">
@@ -120,9 +109,6 @@
 			<div class="row">
 				<div class="col-lg-12 posts-list">
 					<div class="single-post">
-						<!-- <div class="feature-img" align="center">
-							<img class="img-fluid" src="assets/img/banner/banner.png" alt="">
-						</div> -->
 						<div class="blog_details">
 							<h3>Sejarah Kami</h3>
 							<p class="excert" align="justify">
@@ -165,35 +151,7 @@
 			<br>
 		</div>
 	</section>
-	<!-- BAWAH -->
-	<!-- <div class="row">
-		<div class="col-xl-3" style="background-color: #06b154">
-			<br>
-			<h5 style="color: #ffff">Komite Etik </h5>
-			<p class="excert" align="justify" style="color: #ffff; font-family: sans-serif; font-size: 17px;">Komite Etik Rumah Sakit adalah suatu perangkat rumah sakit yang membantu pimpinan rumah sakit dalam melaksanakan Kode Etik Rumah Sakit Seluruh Indonesia (KODERSI) dan menjaga pelaksanaan Good Ethical Practice dalam pengelolaan rumah sakit demi pelayanan</p>
-		</div>
-		<div class="col-xl-3" style="background-color: #0c9a4d">
-			<br>
-			<h5 style="color: #ffff">Komite Medik </h5>
-			<p class="excert" align="justify" style="color: #ffff; font-family: sans-serif; font-size: 17px;">Komite Medik adalah perangkat rumah sakit untuk menerapkan tata kelola klinik (clinical governance) agar staf medis di rumah sakit terjaga profesionalismenya melalui mekanisme kredensial penjagaan mutu profesi medis, pemeliharaan etika dan disiplin profesi medis.</p>
-		</div>
-		<div class="col-xl-3" style="background-color: #128647">
-			<br>
-			<h5 style="color: #ffff">Komite Keperawatan</h5>
-			<p class="excert" align="justify" style="color: #ffff; font-family: sans-serif; font-size: 17px;">Komite Keperawatan adalah perangkat rumah sakit yang menjadi wadah profesi keperawatan yang berfungsi meningkatkan profesionalisme keperawatan melalui kegiatan penyusunan standar, peningkatan kompetensi perawat, serta kegiatan pemantauan dan penjagaan mutu asuhan</p>
-
-		</div>
-		<div class="col-xl-3" style="background-color: #136137">
-			<br>
-			<h5 style="color: #ffff">Komite Pencegahan dan Pengendalian Infeksi </h5>
-			<p class="excert" align="justify" style="color: #ffff; font-family: sans-serif; font-size: 17px;">Komite Pencegahan dan Pengendalian Infeksi (KPPI) mendukung peningkatan mutu pelayanan kesehatan yang prima dan profesional, khususnya dalam pencegahan dan pengendalian infeksi di lingkungan RS. Khusus Ginjal Ny. R.A. Habibie</p>
-
-		</div>
-	</div> -->
-	<!--================ Blog Area end =================-->
-
 	<?php include 'include/footer.php' ?>
-	<!-- link that opens popup -->
 	<?php include 'include/jsfile.php'; ?>
 </body>
 </html>

@@ -4,8 +4,8 @@
 <body>
     <div class="preloader">
         <div class="loading">
-            <img src="assets/gif/Ripple.gif" width="100">
-            <p>Loading...</p>
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
         </div>
     </div>
     <?php include 'include/header.php' ?>
@@ -22,8 +22,6 @@
             </div>
         </div>
     </div>
-    <!-- bradcam_area_end  -->
-    <!-- ================ contact section start ================= -->
     <section class="contact-section">
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">
@@ -31,8 +29,6 @@
             </div>
         </div>
     </section>
-    <!-- ================ contact section end ================= -->
-
     <?php include 'include/footer.php' ?>
     <?php include 'include/jsfile.php'; ?>
 </body>

@@ -4,8 +4,8 @@
 <body>
     <div class="preloader">
         <div class="loading">
-            <img src="assets/gif/Ripple.gif" width="100">
-            <p>Loading...</p>
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
         </div>
     </div>
     <?php include 'include/header.php'; ?>

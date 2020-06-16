@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/slicknav.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- LOADER -->
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <style type="text/css">
@@ -29,7 +33,7 @@
             width: 100%;
             height: 100%;
             z-index: 9999;
-            background-color: #f1f2f3;
+            background-color: #ffff;
         }
         .preloader .loading {
             position: absolute;
@@ -38,6 +42,12 @@
             animation-delay: 0.100s;
             transform: translate(-50%,-50%);
             font: 14px arial;
+        }
+    </style>
+    <style>
+        .iklan {
+            width: 100%;
+            height: auto;
         }
     </style>
     <script>
@@ -52,8 +62,8 @@
 <body>
     <div class="preloader">
         <div class="loading">
-            <img src="assets/gif/Ripple.gif" width="100">
-            <p>Loading...</p>
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
         </div>
     </div>
     <?php include 'include/header.php'; ?>
@@ -62,32 +72,26 @@
         <div class="slider_active owl-carousel">
             <div class="single_slider  d-flex align-items-center" style="background-image: url('assets/img/banner/slider1.png'); background-size: 100%; background-position: 100%; background-repeat: no-repeat;">
             </div>
-            <div class="single_slider  d-flex align-items-center" style="background-image: url('assets/img/banner/slider1.png'); background-size: 100%; background-position: 100%; background-repeat: no-repeat;">
+            <div class="single_slider  d-flex align-items-center" style="background-image: url('assets/img/banner/banner-1.png'); background-size: 100%; background-position: 100%; background-repeat: no-repeat;">
             </div>
-            <div class="single_slider  d-flex align-items-center" style="background-image: url('assets/img/banner/slider1.png'); background-size: 100%; background-position: 100%; background-repeat: no-repeat;">
+            <div class="single_slider  d-flex align-items-center" style="background-image: url('assets/img/banner/banner.png'); background-size: 100%; background-position: 100%; background-repeat: no-repeat;">
             </div>
-            <div class="single_slider  d-flex align-items-center" style="background-image: url('assets/img/banner/slider1.png'); background-size: 100%; background-position: 100%; background-repeat: no-repeat;">
+            <div class="single_slider  d-flex align-items-center" style="background-image: url('assets/img/banner/Web.png'); background-size: 100%; background-position: 100%; background-repeat: no-repeat;">
             </div>
         </div>
     </div>
-    <!-- End Slider -->
-
-    <!-- Tap Part  -->
-    <!-- <section class="ftco-section-parallax">
-        <div class="parallax-img d-flex align-items-center">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                        <h2>Center of Excellence</h2>
-                        <p>Untuk pelayanan kesehatan Ginjal di Indonesia</p>
+    <button id="button_modal" type="button" data-toggle="modal" data-target="#myModal" style="display:none">Open Modal</button>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #fff">
+                <div class="modal-body">
+                    <div align="center">
+                        <img src="assets/img/iklan/iklan.png" class="iklan">
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- Tap Part  -->
-
-    <!-- Pengenalan RSKG -->
+    </div>
     <div class="welcome_docmed_area">
         <div class="container">
             <div class="section_title text-center mb-55">
@@ -106,148 +110,133 @@
             </div>
         </div>
     </div>
-    <!-- End Pengenalan RSKG -->
-
-    <!-- Pelayanan Kami 1 -->
-    <!-- <section class="bradcam_area breadcam_bg_2 overlay_skyblue" style="background-image: url('assets/img/elements/unnamed.jpg');"> -->
-        <section class="bradcam_area breadcam_bg_2 overlay_skyblue" style="background-image: url('assets/img/elements/unnamed.jpg');">
-            <div class="container">
-                <div class="row justify-content-center pb-3">
-                    <div class="col-md-10 heading-section heading-section-white text-center ftco-animate">
-                        <h2 class="mb-4">Layanan Kami</h2>
-                    </div>
+    <section class="bradcam_area breadcam_bg_2 overlay_skyblue" style="background-image: url('assets/img/elements/unnamed.jpg');">
+        <div class="container">
+            <div class="row justify-content-center pb-3">
+                <div class="col-md-10 heading-section heading-section-white text-center ftco-animate">
+                    <h2 class="mb-4">Layanan Kami</h2>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 ftco-animate">
-                        <div class="carousel-candidates owl-carousel">
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/igd-icon.png);"></div>
-                                    <h2>IGD</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/hd-icon.png);"></div>
-                                    <h2>Hemodialisa</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/capd-icon.png);"></div>
-                                    <h2>CAPD</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/lab-icon.png);"></div>
-                                    <h2>Laboratorium</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/radiologi-icon.png);"></div>
-                                    <h2>Radiologi</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/farmasi-icon.png);"></div>
-                                    <h2>Farmasi</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/mcu-icon.png);"></div>
-                                    <h2>Medical Checkup</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/bedah-icon.png);"></div>
-                                    <h2>Bedah</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/rajal-icon.png);"></div>
-                                    <h2>Rawat Jalan</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
-                            <div class="item">
-                                <a href="#" class="team text-center">
-                                    <div class="img" style="background-image: url(mode/images/icon-pelayanan/ranap-icon.png);"></div>
-                                    <h2>Rawat Inap</h2>
-                                    <span class="position">Klik Disini</span>
-                                </a>
-                            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ftco-animate">
+                    <div class="carousel-candidates owl-carousel">
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/igd-icon.png);"></div>
+                                <h2>IGD</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/hd-icon.png);"></div>
+                                <h2>Hemodialisa</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/capd-icon.png);"></div>
+                                <h2>CAPD</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/lab-icon.png);"></div>
+                                <h2>Laboratorium</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/radiologi-icon.png);"></div>
+                                <h2>Radiologi</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/farmasi-icon.png);"></div>
+                                <h2>Farmasi</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/mcu-icon.png);"></div>
+                                <h2>Medical Checkup</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/bedah-icon.png);"></div>
+                                <h2>Bedah</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/rajal-icon.png);"></div>
+                                <h2>Rawat Jalan</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="team text-center">
+                                <div class="img" style="background-image: url(mode/images/icon-pelayanan/ranap-icon.png);"></div>
+                                <h2>Rawat Inap</h2>
+                                <span class="position">Klik Disini</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End Pelayanan Kami 1 -->
-        <br>
-        <br>
-        <!-- Dokter -->
-        <div class="expert_doctors_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section_title text-center mb-55">
-                            <h3>Dokter Kami</h3>
-                        </div>
-                        <a href="jadwal-dokter.php" class="boxed-btn3-white-2">Lihat Jadwal Dokter</a>
-                        <br>
-                        <hr>
-                        <div class="expert_active owl-carousel">
-                            <div class="single_expert">
-                                <div class="expert_thumb">
-                                    <img src="assets/img/dokter/crop/1.png">
-                                </div>
-                                <div class="experts_name text-center">
-                                    <font style="font-size: 15px">dr. Esther Sylviani Sutedjo</font><br>
-                                    <span>Dokter Umum</span>
-                                </div>
-                            </div>
-                            <div class="single_expert">
-                                <div class="expert_thumb">
-                                    <img src="assets/img/dokter/crop/2.png">
-                                </div>
-                                <div class="experts_name text-center">
-                                    <font style="font-size: 15px">dr. Elda Arini Hartono</font><br>
-                                    <span>Dokter Umum</span>
-                                </div>
-                            </div>
-                            <div class="single_expert">
-                                <div class="expert_thumb">
-                                    <img src="assets/img/dokter/crop/3.png">
-                                </div>
-                                <div class="experts_name text-center">
-                                    <font style="font-size: 15px">dr. Irene Ranny Krsitya N, MH.Kes</font><br>
-                                    <span>Dokter Umum</span>
-                                </div>
-                            </div>
-                        <!-- <div class="single_expert">
+        </div>
+    </section>
+    <br>
+    <br>
+    <div class="expert_doctors_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-55">
+                        <h3>Dokter Kami</h3>
+                    </div>
+                    <a href="jadwal-dokter.php" class="boxed-btn3-white-2">Lihat Jadwal Dokter</a>
+                    <br>
+                    <hr>
+                    <div class="expert_active owl-carousel">
+                        <div class="single_expert">
                             <div class="expert_thumb">
-                                <img src="assets/img/dokter/crop/4.png">
+                                <img src="assets/img/dokter/crop/1.png">
                             </div>
                             <div class="experts_name text-center">
-                                <font style="font-size: 15px">Dr MAGHFILDA AULIA S</font><br>
+                                <font style="font-size: 15px">dr. Esther Sylviani Sutedjo</font><br>
                                 <span>Dokter Umum</span>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="single_expert">
+                            <div class="expert_thumb">
+                                <img src="assets/img/dokter/crop/2.png">
+                            </div>
+                            <div class="experts_name text-center">
+                                <font style="font-size: 15px">dr. Elda Arini Hartono</font><br>
+                                <span>Dokter Umum</span>
+                            </div>
+                        </div>
+                        <div class="single_expert">
+                            <div class="expert_thumb">
+                                <img src="assets/img/dokter/crop/3.png">
+                            </div>
+                            <div class="experts_name text-center">
+                                <font style="font-size: 15px">dr. Irene Ranny Krsitya N, MH.Kes</font><br>
+                                <span>Dokter Umum</span>
+                            </div>
+                        </div>
                         <div class="single_expert">
                             <div class="expert_thumb">
                                 <img src="assets/img/dokter/crop/5.png">
@@ -281,15 +270,6 @@
                             </div>
                             <div class="experts_name text-center">
                                 <font style="font-size: 15px">dr. Nandya Meitadani</font><br>
-                                <span>Dokter Umum</span>
-                            </div>
-                        </div>
-                        <div class="single_expert">
-                            <div class="expert_thumb">
-                                <img src="assets/img/dokter/crop/10.png">
-                            </div>
-                            <div class="experts_name text-center">
-                                <font style="font-size: 15px">dr. Rany R Kusuma Sejati</font><br>
                                 <span>Dokter Umum</span>
                             </div>
                         </div>
@@ -343,9 +323,6 @@
             </div>
         </div>
     </div>
-    <!-- End Dokter -->
-
-    <!-- Informasi -->
     <div class="our_department_area">
         <div class="container">
             <div class="row">
@@ -362,7 +339,7 @@
                             <img src="assets/img/elements/covid.jpg" width="100%" height="250px" alt="">
                         </div>
                         <div class="department_content">
-                            <font><a href="#">Pencegahan COVID-19</a></font>
+                            <font style="font-size: 20px;"><a href="#">Pencegahan COVID-19</a></font>
                             <p>Esteem spirit temper too say adieus who direct esteem esteem esteem esteem...</p>
                             <a href="#" class="learn_more">Selengkapnya</a>
                         </div>
@@ -374,7 +351,7 @@
                             <img src="assets/img/elements/1405790diabetes.png" width="100%" height="250px" alt="">
                         </div>
                         <div class="department_content">
-                            <font><a href="#">Hidup Sehat Dengan Diabetes Melitus</a></font>
+                            <font style="font-size: 20px;"><a href="#">Hidup Sehat Dengan Diabetes Melitus</a></font>
                             <p>Esteem spirit temper too say adieus who direct esteem...</p>
                             <a href="#" class="learn_more">Selengkapnya</a>
                         </div>
@@ -386,7 +363,7 @@
                             <img src="assets/img/elements/289682anemia.png" width="100%" height="250px" alt="">
                         </div>
                         <div class="department_content">
-                            <font><a href="#">Anemia</a></font>
+                            <font style="font-size: 20px;"><a href="#">Anemia</a></font>
                             <p>Esteem spirit temper too say adieus who direct esteem esteem esteem esteem...</p>
                             <a href="#" class="learn_more">Selengkapnya</a>
                         </div>
@@ -398,7 +375,7 @@
                             <img src="assets/img/elements/ckd.jpg" width="100%" height="250px" alt="">
                         </div>
                         <div class="department_content">
-                            <font><a href="#">Chronic Kidney Disease (CKD)</a></font>
+                            <font style="font-size: 20px;"><a href="#">Chronic Kidney Disease (CKD)</a></font>
                             <p>Esteem spirit temper too say adieus who direct esteem esteem esteem esteem...</p>
                             <a href="#" class="learn_more">Selengkapnya</a>
                         </div>
@@ -410,7 +387,7 @@
                             <img src="assets/img/elements/unnamed-1.jpg" width="100%" height="250px" alt="">
                         </div>
                         <div class="department_content">
-                            <font><a href="#">Hari Ginjal Dunia 2020</a></font>
+                            <font style="font-size: 20px;"><a href="#">Hari Ginjal Dunia 2020</a></font>
                             <p>Esteem spirit temper too say adieus who direct esteem esteem esteem esteem...</p>
                             <a href="#" class="learn_more">Selengkapnya</a>
                         </div>
@@ -422,7 +399,7 @@
                             <img src="assets/img/elements/ginjal.jpg" width="100%" height="250px" alt="">
                         </div>
                         <div class="department_content">
-                            <font><a href="#">Cegah Penyakit Ginjal, Ubah Gaya Hidup dengan Hidrasi Sehat</a></font>
+                            <font style="font-size: 20px;"><a href="#">Cegah Penyakit Ginjal, Ubah Gaya Hidup dengan Hidrasi Sehat</a></font>
                             <p>Esteem spirit temper too say adieus who direct esteem...</p>
                             <a href="#" class="learn_more">Selengkapnya</a>
                         </div>
@@ -431,9 +408,6 @@
             </div>
         </div>
     </div>
-    <!-- End Informasi -->
-
-    <!-- testmonial_area_start -->
     <div class="testmonial_area">
         <div class="testmonial_active owl-carousel">
             <div class="single-testmonial testmonial_bg_1 overlay2">
@@ -501,69 +475,52 @@
             </div>
         </div>
     </div>
-    <!-- testmonial_area_end -->
-
-
-    <!-- Galeri Kami -->
-    <!-- <div class="whole-wrap">
-        <div class="container box_1170">
-            <div class="section">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section_title text-center mb-55">
-                            <h3>Galeri Kami</h3>
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <h3>Buat Janji Online</h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <input id="datepicker" placeholder="Pick date">
+                        </div>
+                        <div class="col-xl-6">
+                            <input id="datepicker2" placeholder="Suitable time">
+                        </div>
+                        <div class="col-xl-6">
+                            <select class="form-select wide" id="default-select" class="">
+                                <option data-display="Select Department">Department</option>
+                                <option value="1">Eye Care</option>
+                                <option value="2">Physical Therapy</option>
+                                <option value="3">Dental Care</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-6">
+                            <select class="form-select wide" id="default-select" class="">
+                                <option data-display="Doctors">Doctors</option>
+                                <option value="1">Mirazul Alom</option>
+                                <option value="2">Monzul Alom</option>
+                                <option value="3">Azizul Isalm</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="text"  placeholder="Name">
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="text"  placeholder="Phone no.">
+                        </div>
+                        <div class="col-xl-12">
+                            <input type="email"  placeholder="Email">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed-btn3">Confirm</button>
                         </div>
                     </div>
-                </div>
-                <div class="row gallery-item">
-                    <div class="col-md-4">
-                        <a href="assets/img/gallery/g1.png" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/gallery/g1.png);"></div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="assets/img/gallery/g2.png" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/gallery/g2.png);"></div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="assets/img/gallery/g3.png" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/gallery/g3.png);"></div>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="assets/img/gallery/g4.png" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/gallery/g4.png);"></div>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="assets/img/gallery/g5.png" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/gallery/g5.png);"></div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="assets/img/gallery/g1.png" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/gallery/g1.png);"></div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="assets/img/gallery/g2.png" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/gallery/g2.png);"></div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="assets/img/gallery/g3.png" class="img-pop-up">
-                            <div class="single-gallery-image" style="background: url(assets/img/gallery/g3.png);"></div>
-                        </a>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
-    </div> -->
-    <!-- End Galeri Kami -->
-
-    <!-- IGD Call & Buaj Janji Online -->
-    <div class="Emergency_contact">
+    </form>
+    <!-- <div class="Emergency_contact">
         <div class="conatiner-fluid p-0">
             <div class="row no-gutters">
                 <div class="col-xl-6">
@@ -584,17 +541,13 @@
                             <p>Silahkan mengikuti langkah-langkah pada lembar janji online</p>
                         </div>
                         <div class="info_button">
-                            <!-- <a href="#" class="boxed-btn3-white">Klik Disini</a> -->
                             <a class="popup-with-form boxed-btn3-white" href="#test-form">Klik Disini</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- IGD Call & Buaj Janji Online -->
-
-    <!-- form itself end -->
+    </div> -->
     <?php include 'include/footer.php'; ?>
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -637,20 +590,8 @@
         $(document).ready(function() {
             $('.js-example-basic-multiple').select2();
         });
+        $('#button_modal').click();
     </script>
-    <!--Start of Tawk.to Script-->
-    <!-- <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/5e65fd3fc32b5c19173a52a6/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script> -->
-    <!-- Getbutton.io widget -->
     <script type="text/javascript">
         (function () {
             var options = {
@@ -664,7 +605,6 @@
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
-<!-- /Getbutton.io widget -->
 <script src="mode/js/jquery.waypoints.min.js"></script>
 <script src="mode/js/jquery.stellar.min.js"></script>
 <script src="mode/js/owl.carousel.min.js"></script>

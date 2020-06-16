@@ -3,11 +3,11 @@
 <?php include 'include/head.php'; ?>
 <body>
 	<div class="preloader">
-		<div class="loading">
-			<img src="assets/gif/Ripple.gif" width="100">
-			<p>Loading...</p>
-		</div>
-	</div>
+        <div class="loading">
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
+        </div>
+    </div>
 	<?php include 'include/header.php' ?>
 	<div class="bradcam_area breadcam_bg" style="background-image: url('assets/img/bg-pelayanan/bg-igd.png'); background-size: 100%; background-position: 50% 50%;">
 		<div class="container">
@@ -37,7 +37,7 @@
 			<div class="col-lg-12 posts-list">
 				<div class="blog_details" align="justify">
 					<h3>Tata <font style="color: red">Tertib</font></h3>
-					<p align="justify">Keluarga dan pasien wajib menjaga ketenangan dan ketertiban selama berada diruangan IGD RS. Khusus Ginjal Ny. R.A. Habibie. Pasien yang masuk ke ruang periksa IGD hanya boleh didampingi oleh 1-2 orang.</p>	
+					<p align="justify">Keluarga dan pasien wajib menjaga ketenangan dan ketertiban selama berada diruangan IGD RS. Khusus Ginjal Ny. R.A. Habibie. Pasien yang masuk ke ruang periksa IGD hanya boleh didampingi oleh 1-2 orang.</p>
 					<h3>Pelayanan <font style="color: red">IGD</font></h3>
 					<label>IGD RS. Khusus Habibie melayani Kasus-Kasus</label>
 					<ul>
@@ -128,7 +128,6 @@
 											<div class="business_thumb">
 												<ul>
 													<li> <i class="flaticon-right"></i> Dr. Noor Rusma Hidayati. </li>
-													<!-- <li> <i class="flaticon-right"></i> Dr. Cut Indra Murzi.</li> -->
 													<li> <i class="flaticon-right"></i> Dr. Esther Sylviani.</li>
 												</ul>
 											</div>
@@ -143,7 +142,6 @@
 		</div>
 	</div>
 	<?php include 'include/footer.php' ?>
-	<!-- link that opens popup -->
 	<?php include 'include/jsfile.php'; ?>
 </body>
 </html>

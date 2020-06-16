@@ -3,28 +3,25 @@
 <?php include 'include/head.php' ?>
 <body>
 	<div class="preloader">
-		<div class="loading">
-			<img src="assets/gif/Ripple.gif" width="100">
-			<p>Loading...</p>
-		</div>
-	</div>
+        <div class="loading">
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
+        </div>
+    </div>
 	<?php include 'include/header.php' ?>
-	<!-- bradcam_area_start  -->
 	<div class="bradcam_area breadcam_bg" style="background-image: url('assets/img/bg-pelayanan/bg-buletin.png'); background-size: 100%; background-position: 50% 50%;">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="bradcam_text">
-						<h3>Buletin</h3>
-						<p><a href="index.html">Beranda /</a> Buletin</p>
+						<h3>Kegiatan Ilmiah</h3>
+						<p><a href="index.html">Beranda /</a> Kegiatan Ilmiah</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- bradcam_area_end  -->
 	<br>
-	<!--================Blog Area =================-->
 	<section class="blog_area section-padding">
 		<div class="container">
 			<div class="row">
@@ -38,7 +35,6 @@
 									<p>Jan</p>
 								</a>
 							</div>
-
 							<div class="blog_details">
 								<a class="d-inline-block" href="single-blog.html">
 									<h2>Pencegahan COVID-19</h2>
@@ -51,7 +47,6 @@
 								</ul>
 							</div>
 						</article>
-
 						<article class="blog_item">
 							<div class="blog_item_img">
 								<img class="card-img rounded-0" src="assets/img/blog/3.jpg" alt="">
@@ -60,7 +55,6 @@
 									<p>Jan</p>
 								</a>
 							</div>
-
 							<div class="blog_details">
 								<a class="d-inline-block" href="single-blog.html">
 									<h2>Cuci Darah atau Tranplantasi? Kenali Ragam Pengobatan untuk Gagal Ginjal</h2>
@@ -73,7 +67,6 @@
 								</ul>
 							</div>
 						</article>
-
 						<article class="blog_item">
 							<div class="blog_item_img">
 								<img class="card-img rounded-0" src="assets/img/blog/unnamed-1.jpg" alt="">
@@ -82,7 +75,6 @@
 									<p>Jan</p>
 								</a>
 							</div>
-
 							<div class="blog_details">
 								<a class="d-inline-block" href="single-blog.html">
 									<h2>Hari Ginjal Sedunia, Ini Daftar Makanan yang Menyehatkan Ginjal</h2>
@@ -95,7 +87,6 @@
 								</ul>
 							</div>
 						</article>
-
 						<article class="blog_item">
 							<div class="blog_item_img">
 								<img class="card-img rounded-0" src="assets/img/blog/1.jpg" alt="">
@@ -104,7 +95,6 @@
 									<p>Jan</p>
 								</a>
 							</div>
-
 							<div class="blog_details">
 								<a class="d-inline-block" href="single-blog.html">
 									<h2>Hari Ginjal Sedunia, Yuk Jaga Kesehatan Ginjal Anda Dengan 7 Langkah Ini!</h2>
@@ -117,7 +107,6 @@
 								</ul>
 							</div>
 						</article>
-
 						<article class="blog_item">
 							<div class="blog_item_img">
 								<img class="card-img rounded-0" src="assets/img/blog/2.jpg" alt="">
@@ -126,7 +115,6 @@
 									<p>Jan</p>
 								</a>
 							</div>
-
 							<div class="blog_details">
 								<a class="d-inline-block" href="single-blog.html">
 									<h2>Penderita Sakit Ginjal di Indonesia Meningkat Dua Kali Lipat Sejak 2013</h2>
@@ -139,7 +127,6 @@
 								</ul>
 							</div>
 						</article>
-
 						<nav class="blog-pagination justify-content-center d-flex">
 							<ul class="pagination">
 								<li class="page-item">
@@ -210,122 +197,6 @@
 								</li>
 							</ul>
 						</aside>
-
-						<!-- <aside class="single_sidebar_widget popular_post_widget">
-							<h3 class="widget_title">Recent Post</h3>
-							<div class="media post_item">
-								<img src="assets/img/post/post_1.png" alt="post">
-								<div class="media-body">
-									<a href="single-blog.html">
-										<h3>From life was you fish...</h3>
-									</a>
-									<p>January 12, 2019</p>
-								</div>
-							</div>
-							<div class="media post_item">
-								<img src="assets/img/post/post_2.png" alt="post">
-								<div class="media-body">
-									<a href="single-blog.html">
-										<h3>The Amazing Hubble</h3>
-									</a>
-									<p>02 Hours ago</p>
-								</div>
-							</div>
-							<div class="media post_item">
-								<img src="assets/img/post/post_3.png" alt="post">
-								<div class="media-body">
-									<a href="single-blog.html">
-										<h3>Astronomy Or Astrology</h3>
-									</a>
-									<p>03 Hours ago</p>
-								</div>
-							</div>
-							<div class="media post_item">
-								<img src="assets/img/post/post_4.png" alt="post">
-								<div class="media-body">
-									<a href="single-blog.html">
-										<h3>Asteroids telescope</h3>
-									</a>
-									<p>01 Hours ago</p>
-								</div>
-							</div>
-						</aside>
-						<aside class="single_sidebar_widget tag_cloud_widget">
-							<h4 class="widget_title">Tag Clouds</h4>
-							<ul class="list">
-								<li>
-									<a href="#">project</a>
-								</li>
-								<li>
-									<a href="#">love</a>
-								</li>
-								<li>
-									<a href="#">technology</a>
-								</li>
-								<li>
-									<a href="#">travel</a>
-								</li>
-								<li>
-									<a href="#">restaurant</a>
-								</li>
-								<li>
-									<a href="#">life style</a>
-								</li>
-								<li>
-									<a href="#">design</a>
-								</li>
-								<li>
-									<a href="#">illustration</a>
-								</li>
-							</ul>
-						</aside>
-						<aside class="single_sidebar_widget instagram_feeds">
-							<h4 class="widget_title">Instagram Feeds</h4>
-							<ul class="instagram_row flex-wrap">
-								<li>
-									<a href="#">
-										<img class="img-fluid" src="assets/img/post/post_5.png" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img class="img-fluid" src="assets/img/post/post_6.png" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img class="img-fluid" src="assets/img/post/post_7.png" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img class="img-fluid" src="assets/img/post/post_8.png" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img class="img-fluid" src="assets/img/post/post_9.png" alt="">
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img class="img-fluid" src="assets/img/post/post_10.png" alt="">
-									</a>
-								</li>
-							</ul>
-						</aside>
-						<aside class="single_sidebar_widget newsletter_widget">
-							<h4 class="widget_title">Newsletter</h4>
-
-							<form action="#">
-								<div class="form-group">
-									<input type="email" class="form-control" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-								</div>
-								<button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-								type="submit">Subscribe</button>
-							</form>
-						</aside> -->
 					</div>
 				</div>
 			</div>
@@ -334,8 +205,6 @@
 	<br>
 	<br>
 	<br>
-	<!--================Blog Area =================-->
-
 	<?php include 'include/footer.php' ?>
 	<?php include 'include/jsfile.php'; ?>
 </body>

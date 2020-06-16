@@ -52,10 +52,9 @@
         s0.parentNode.insertBefore(s1,s0);
     })();
 </script> -->
- <!-- Getbutton.io widget -->
-    <script type="text/javascript">
-        (function () {
-            var options = {
+<script type="text/javascript">
+    (function () {
+        var options = {
             whatsapp: "+6285798441442", // WhatsApp number
             call_to_action: "Kirim Pesan", // Call to action
             position: "right", // Position may be 'right' or 'right'
@@ -66,4 +65,3 @@
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
-<!-- /Getbutton.io widget -->

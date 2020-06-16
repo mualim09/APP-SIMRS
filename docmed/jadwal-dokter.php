@@ -19,9 +19,11 @@
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/slicknav.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<!-- Datatables -->
 	<link rel="stylesheet" href="assets/datatables/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
-	<!-- LOADER -->
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 	<style type="text/css">
 		.preloader {
@@ -31,7 +33,7 @@
 			width: 100%;
 			height: 100%;
 			z-index: 9999;
-			background-color: #f1f2f3;
+			background-color: #ffff;
 		}
 		.preloader .loading {
 			position: absolute;
@@ -51,11 +53,11 @@
 
 <body>
 	<div class="preloader">
-		<div class="loading">
-			<img src="assets/gif/Ripple.gif" width="100">
-			<p>Loading...</p>
-		</div>
-	</div>
+        <div class="loading">
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
+        </div>
+    </div>
 	<?php include 'include/header.php' ?>
 	<div class="bradcam_area breadcam_bg" style="background-image: url('assets/img/bg-pelayanan/bg-dokter1.png'); background-size: 100%; background-position: 50% 50%;">
 		<div class="container">
@@ -206,19 +208,11 @@
 								<div class="col-xl-12 col-md-12">
 									<div class="business_info">
 										<div class="table-responsive">
-											<table id="example12" class="table table-condensed">
+											<table id="example12" class="table table-stripe">
 												<thead>
 													<tr style="background-color: #225f4a; color: #ffff">
 														<th>#</th>
 														<th>Nama Dokter</th>
-														<th>Senin</th>
-														<th>Selasa</th>
-														<th>Rabu</th>
-														<th>Kamis</th>
-														<th>Jumat</th>
-														<th>Sabtu</th>
-														<th>Minggu</th>
-														<th>Action</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -238,56 +232,18 @@
 															echo "<tr>";
 															if ($row['foto']==NULL){
 																echo "<td>";
-																echo "<img src='assets/img/dokter/no-foto/blank.jpg' width='100px'>";
+																echo "<img src='assets/img/dokter/no-foto/blank.jpg' width='150px'>";
 																echo "</td>";
 															}else{
 																echo "<td>";
-																echo "<img src='assets/img/dokter/crop/$row[foto]' width='100px'>";
+																echo "<img src='assets/img/dokter/crop/$row[foto]' width='150px'>";
 																echo "</td>";
 															}
 															if ($row['nama_dokter']==NULL){
 																echo "<td>-</td>";
 															}else{
-																echo "<td>".$row['nama_dokter'] . "</td>";
+																echo "<td><font style='font-size: 15px;'>".$row['nama_dokter'] . "</font></td>";
 															}
-															if ($row['senin']==NULL){
-																echo "<td>-</td>";
-															}else{
-																echo "<td>".$row['senin'] . "</td>";
-															}
-															if ($row['selasa']==NULL){
-																echo "<td>-</td>";
-															}else{
-																echo "<td>".$row['selasa'] . "</td>";
-															}
-															if ($row['rabu']==NULL){
-																echo "<td>-</td>";
-															}else{
-																echo "<td>".$row['rabu'] . "</td>";
-															}
-															if ($row['kamis']==NULL){
-																echo "<td>-</td>";
-															}else{
-																echo "<td>".$row['kamis'] . "</td>";
-															}
-															if ($row['jumat']==NULL){
-																echo "<td>-</td>";
-															}else{
-																echo "<td>".$row['jumat'] . "</td>";
-															}
-															if ($row['sabtu']==NULL){
-																echo "<td>-</td>";
-															}else{
-																echo "<td>".$row['sabtu'] . "</td>";
-															}
-															if ($row['minggu']==NULL){
-																echo "<td>-</td>";
-															}else{
-																echo "<td>".$row['minggu'] . "</td>";
-															}
-															echo "<td>
-															<a href='detail-dokter.php?id=$row[id_dokter]' title='Detail Dokter'><span class='genric-btn info-border radius'>Detail</span></a>
-															</td>";
 															echo "</tr>";
 															?>
 															<?php
@@ -307,7 +263,6 @@
 		</div>
 	</div>
 	<?php include 'include/footer.php' ?>
-	<!-- link that opens popup -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
@@ -332,7 +287,6 @@
 	<script src="assets/js/jquery.validate.min.js"></script>
 	<script src="assets/js/mail-script.js"></script>
 	<script src="assets/js/main.js"></script>
-	<!-- Datatables -->
 	<script src="assets/datatables/plugins/datatables/jquery.dataTables.js"></script>
 	<script src="assets/datatables/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 	<script>
@@ -370,19 +324,6 @@
 			"autoWidth": false,
 		});
 	</script>
-	<!--Start of Tawk.to Script-->
-	<!-- <script type="text/javascript">
-		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-		(function(){
-			var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-			s1.async=true;
-			s1.src='https://embed.tawk.to/5e65fd3fc32b5c19173a52a6/default';
-			s1.charset='UTF-8';
-			s1.setAttribute('crossorigin','*');
-			s0.parentNode.insertBefore(s1,s0);
-		})();
-	</script> -->
-	<!-- Getbutton.io widget -->
 	<script type="text/javascript">
 		(function () {
 			var options = {
@@ -396,6 +337,5 @@
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
-<!-- /Getbutton.io widget -->	
 </body>
 </html>

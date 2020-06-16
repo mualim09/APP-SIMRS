@@ -4,12 +4,11 @@
 <body>
     <div class="preloader">
         <div class="loading">
-            <img src="assets/gif/Ripple.gif" width="100">
-            <p>Loading...</p>
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
         </div>
     </div>
     <?php include 'include/header.php' ?>
-    <!-- bradcam_area_start  -->
     <div class="bradcam_area breadcam_bg" style="background-image: url('assets/img/bg-pelayanan/bg-kontak.png'); background-size: 100%; background-position: 50% 50%;">
         <div class="container">
             <div class="row">
@@ -22,8 +21,6 @@
             </div>
         </div>
     </div>
-    <!-- bradcam_area_end  -->
-    <!-- ================ contact section start ================= -->
     <section class="contact-section">
         <div class="container">
             <div class="row">
@@ -86,18 +83,10 @@
                             <p>Anda dapat email kami kapanpun!</p>
                         </div>
                     </div>
-                    <!-- <strong>Hubungi Kami<hr></strong>
-                    <strong>Pusat Panggilan:</strong><font>(022)2502985</font><br>
-                    <strong>IGD:</strong><font>(022)2502985</font><br>
-                    <strong>Whatsapp:</strong><font>(022)2502985</font><br>
-                    <strong>Email:</strong><font>rskghabibie@yahoo.com</font><br>
-                    <strong>Pemasaran:</strong><font>rskghabibie@yahoo.com</font><br> -->
                 </div>
             </div>
         </div>
     </section>
-    <!-- ================ contact section end ================= -->
-
     <?php include 'include/footer.php' ?>
     <?php include 'include/jsfile.php'; ?>
 </body>

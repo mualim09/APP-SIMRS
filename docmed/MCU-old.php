@@ -3,11 +3,11 @@
 <?php include 'include/head.php'; ?>
 <body>
 	<div class="preloader">
-		<div class="loading">
-			<img src="assets/gif/Ripple.gif" width="100">
-			<p>Loading...</p>
-		</div>
-	</div>
+        <div class="loading">
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
+        </div>
+    </div>
 	<?php include 'include/header.php' ?>
 	<div class="bradcam_area breadcam_bg" style="background-image: url('assets/img/bg-pelayanan/bg-mcu.png'); background-size: 100%; background-position: 50% 50%;">
 		<div class="container">
@@ -210,7 +210,6 @@
 				</div>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col-lg-12 posts-list">
 				<div class="blog_details">
@@ -315,7 +314,6 @@
 		</div>
 	</div>
 	<?php include 'include/footer.php' ?>
-	<!-- link that opens popup -->
 	<?php include 'include/jsfile.php'; ?>
 </body>
 </html>

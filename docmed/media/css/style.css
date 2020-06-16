@@ -3915,28 +3915,28 @@ h6 {
 /* line 237, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_elements.scss */
 .genric-btn.success {
   color: #fff;
-  background: #4cd3e3;
+  background: #56b16b;
   border: 1px solid transparent;
 }
 
 /* line 241, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_elements.scss */
 .genric-btn.success:hover {
-  color: #4cd3e3;
-  border: 1px solid #4cd3e3;
+  color: #56b16b;
+  border: 1px solid #56b16b;
   background: #fff;
 }
 
 /* line 247, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_elements.scss */
 .genric-btn.success-border {
-  color: #4cd3e3;
-  border: 1px solid #4cd3e3;
+  color: #56b16b;
+  border: 1px solid #56b16b;
   background: #fff;
 }
 
 /* line 251, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_elements.scss */
 .genric-btn.success-border:hover {
   color: #fff;
-  background: #4cd3e3;
+  background: #56b16b;
   border: 1px solid transparent;
 }
 
@@ -4588,7 +4588,7 @@ h6 {
 
 /* line 761, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_elements.scss */
 .confirm-switch input:checked + label:before {
-  background: #4cd3e3;
+  background: #56b16b;
 }
 
 /* line 769, ../../Arafath/CL/january 2020/241. Medical/HTML/scss/_elements.scss */

@@ -64,28 +64,20 @@
 										</ul>
 									</li>
 									<li><a href="jadwal-dokter.php">Jadwal Dokter</a></li>
-									<!-- <li><a href="#">Jadwal Dokter<i class="ti-angle-down"></i></a>
-										<ul class="submenu">
-											<li><a href="dokter-spesialis.php">Dokter Spesialis</a></li>
-											<li><a href="dokter-umum.php">Dokter Umum</a></li>
-										</ul>
-									</li> -->
 									<li><a href="#">Informasi<i class="ti-angle-down"></i></a>
 										<ul class="submenu">
 											<li><a href="alur-pendaftaran.php">Alur Pendaftaran</a></li>
-											<!-- <li><a href="fasilitas.php">Fasilitas RSKG</a></li> -->
-											<li><a href="buletin.php">Buletin</a></li>
+											<li><a href="buletin.php">Kegiatan Ilmiah</a></li>
 											<li><a href="tata-tertib.php">Tata Tertib</a></li>
 											<li><a href="galeri.php">Galeri</a></li>
-										</ul>
-									</li>
-									<li><a href="karir.php">Karir</a></li>
-									<li><a href="#">Hubungi Kami<i class="ti-angle-down"></i></a>
-										<ul class="submenu">
-											<!-- <li><a href="FAQ.php">FAQ</a></li> -->
+											<li><a href="karir.php">Lowongan Kerja</a></li>
 											<li><a href="Kontak.php">Kontak</a></li>
 											<li><a href="Lokasi.php">Lokasi</a></li>
 										</ul>
+									</li>
+									<li><a href="info-bpjs.php">Info BPJS</a></li>
+									<li>
+										<button class="genric-btn success" data-toggle="modal" data-target="#daftar">Daftar Disini</button>
 									</li>
 								</ul>
 							</nav>

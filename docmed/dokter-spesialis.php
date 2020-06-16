@@ -7,7 +7,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/img/rskg/header.png">
-	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -19,9 +18,11 @@
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/slicknav.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-	<!-- Datatables -->
 	<link rel="stylesheet" href="assets/datatables/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
-	<!-- LOADER -->
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
 	<style type="text/css">
 		.preloader {
@@ -31,7 +32,7 @@
 			width: 100%;
 			height: 100%;
 			z-index: 9999;
-			background-color: #f1f2f3;
+			background-color: #ffff;
 		}
 		.preloader .loading {
 			position: absolute;
@@ -48,14 +49,13 @@
 		})
 	</script>
 </head>
-
 <body>
 	<div class="preloader">
-		<div class="loading">
-			<img src="assets/gif/Ripple.gif" width="100">
-			<p>Loading...</p>
-		</div>
-	</div>
+        <div class="loading">
+            <img src="assets/gif/radio.gif">
+            <font style="font-family: arial; font-size: 25px; color: #56b16b">Loading</font>
+        </div>
+    </div>
 	<?php include 'include/header.php' ?>
 	<div class="bradcam_area breadcam_bg" style="background-image: url('assets/img/bg-pelayanan/bg-dokter.png'); background-size: 100%; background-position: 50% 50%;">
 		<div class="container">
@@ -180,7 +180,6 @@
 		</div>
 	</div>
 	<?php include 'include/footer.php' ?>
-	<!-- link that opens popup -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
@@ -205,7 +204,6 @@
 	<script src="assets/js/jquery.validate.min.js"></script>
 	<script src="assets/js/mail-script.js"></script>
 	<script src="assets/js/main.js"></script>
-	<!-- Datatables -->
 	<script src="assets/datatables/plugins/datatables/jquery.dataTables.js"></script>
 	<script src="assets/datatables/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 	<script>
@@ -234,7 +232,6 @@
 			"autoWidth": false,
 		});
 	</script>
-	<!--Start of Tawk.to Script-->
 	<script type="text/javascript">
 		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 		(function(){

@@ -7,7 +7,7 @@
 		<div class="yummy-load"></div>
 	</div>
 	<!-- Background Pattern Swither -->
-	<a href="http://127.0.0.1/rskgsirsadm/ext-view-all.php" target="_blank">
+	<a href="http://192.168.55.164/sirsadm/ext-view-all.php" target="_blank">
 		<div id="pattern-switcher">
 			<i class="fa fa-user"></i> Ext. Telepon
 		</div>
@@ -33,7 +33,7 @@
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
 						<img src="assets/img/all-rs/logo/website1.png" alt="">
 						<div class="catagory-title">
-							<a href="http://rskghabibie.com/" target="_blank">
+							<a href="http://rskghabibie.com" target="_blank">
 								<h5>Open</h5>
 							</a>
 						</div>
@@ -43,7 +43,7 @@
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
 						<img src="assets/img/all-rs/logo/simrs1.png" alt="">
 						<div class="catagory-title">
-							<a href="http://192.168.55.127:127/index.php?r=site/login" target="_blank">
+							<a href="http://192.168.55.127/ehospitalrskg" target="_blank">
 								<h5>Open</h5>
 							</a>
 						</div>
@@ -63,7 +63,7 @@
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
 						<img src="assets/img/all-rs/logo/sirs-adm1.png" alt="">
 						<div class="catagory-title">
-							<a href="http://127.0.0.1/rskgsirsadm" target="_blank">
+							<a href="http://192.168.55.164/sirsadm" target="_blank">
 								<h5>Open</h5>
 							</a>
 						</div>
@@ -71,7 +71,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/admedika.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/admedika.PNG" alt="">
 						<div class="catagory-title">
 							<a href="https://mobile.admedika.co.id/edc/" target="_blank">
 								<h5>Open</h5>
@@ -81,7 +81,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/aspak.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/aspak.PNG" alt="">
 						<div class="catagory-title">
 							<a href="http://aspak.kemkes.go.id/aplikasi/" target="_blank">
 								<h5>Open</h5>
@@ -91,9 +91,9 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/e-claim.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/e-claim.PNG" alt="">
 						<div class="catagory-title">
-							<a href="#" target="_blank">
+							<a href="http://192.168.55.15/eclaim" target="_blank">
 								<h5>Open</h5>
 							</a>
 						</div>
@@ -111,7 +111,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/info-denda.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/info-denda.PNG" alt="">
 						<div class="catagory-title">
 							<a href="http://ida.bpjs-kesehatan.go.id/infodenda" target="_blank">
 								<h5>Open</h5>
@@ -121,9 +121,9 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/mandiri.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/mandiri.PNG" alt="">
 						<div class="catagory-title">
-							<a href="#" target="_blank">
+							<a href="http://192.168.55.164/empty.php" target="_blank">
 								<h5>Open</h5>
 							</a>
 						</div>
@@ -131,9 +131,9 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/nextcloud.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/nextcloud.PNG" alt="">
 						<div class="catagory-title">
-							<a href="#" target="_blank">
+							<a href="http://192.168.55.164/empty.php" target="_blank">
 								<h5>Open</h5>
 							</a>
 						</div>
@@ -141,9 +141,9 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/simaids.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/simaids.PNG" alt="">
 						<div class="catagory-title">
-							<a href="#" target="_blank">
+							<a href="http://192.168.55.164/empty.php" target="_blank">
 								<h5>Open</h5>
 							</a>
 						</div>
@@ -151,7 +151,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/siranap.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/siranap.PNG" alt="">
 						<div class="catagory-title">
 							<a href="http://yankes.kemkes.go.id/app/siranap-yankes/login" target="_blank">
 								<h5>Open</h5>
@@ -161,7 +161,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/sisrute.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/sisrute.PNG" alt="">
 						<div class="catagory-title">
 							<a href="https://sisrute.kemkes.go.id/baru/index.php" target="_blank">
 								<h5>Open</h5>
@@ -171,7 +171,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
-						<img src="assets/img/rskgcare-icon/back-ok/v-claim.png" alt="">
+						<img src="assets/img/rskgcare-icon/back-ok/v-claim.PNG" alt="">
 						<div class="catagory-title">
 							<a href="https://vclaim.bpjs-kesehatan.go.id/vclaim" target="_blank">
 								<h5>Open</h5>
@@ -203,7 +203,7 @@
 					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
 						<img src="assets/CARE/UHC.PNG" alt="">
 						<div class="catagory-title">
-							<a href="tinyurl.com/UHCRS" target="_blank">
+							<a href="http://tinyurl.com/UHCRS" target="_blank">
 								<h5>Open</h5>
 							</a>
 						</div>
@@ -249,6 +249,46 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
+						<img src="assets/img/all-rs/e-dpa.png" alt="">
+						<div class="catagory-title">
+							<a href="http://192.168.55.164/app-dpa/" target="_blank">
+								<h5>Open</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
+						<img src="assets/img/all-rs/sis-kasir.png" alt="">
+						<div class="catagory-title">
+							<a href="http://192.168.55.164/app-kasir/" target="_blank">
+								<h5>Open</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
+						<img src="assets/img/all-rs/sis-ppi.png" alt="">
+						<div class="catagory-title">
+							<a href="http://192.168.55.164/old-sirsper/" target="_blank">
+								<h5>Open</h5>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
+						<img src="assets/img/all-rs/sis-validasi.png" alt="">
+						<div class="catagory-title">
+							<a href="http://192.168.55.164/rskg-validator/" target="_blank">
+								<h5>Open</h5>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -257,3 +297,4 @@
 	?>
 	<?php include 'include/jsfile.php'; ?>
 </body>
+</html>
