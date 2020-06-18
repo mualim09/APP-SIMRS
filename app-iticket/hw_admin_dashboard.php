@@ -102,15 +102,15 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 					<?php include 'include/alert/success.php' ?>
 					<!-- END ALERT -->
 					<div align="center">
-						<h2>Monitoring Progres Pengajuan Ticket </h2><h3><?php echo tanggal_indo(date('Y-m-d')); ?></h3>
+						<h2>Monitoring Progres Ticket </h2><h3><?php echo tanggal_indo(date('Y-m-d')); ?></h3>
 						<hr>
 					</div>
 					<div class="row">
-						<div class="col-xl-4">
+						<div class="col-xl-3">
 							<div class="card">
 								<div class="card-body">
 									<div class="d-inline-block">
-										<h5 class="text-muted">Software Problem</h5>
+										<h5 class="text-muted">Total Ticket</h5>
 										<?php
 											$con=mysqli_connect("localhost","root","","rskg_ticket");
 											if (mysqli_connect_errno())
@@ -118,7 +118,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
 											}
 											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT COUNT(*) AS total_sw FROM tb_ticket WHERE trouble='Software' AND email_user='$datax'");
+											$result = mysqli_query($con,"SELECT COUNT(*) AS total_sw FROM tb_ticket WHERE trouble='Software'");
 
 											if(mysqli_num_rows($result)>0){
 												while($row = mysqli_fetch_array($result))
@@ -128,17 +128,17 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 													
 												<?php } } mysqli_close($con); ?>
 									</div>
-									<div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
-										<img src="assets/images/icon/unnamed.png" width="40px">
-									</div>
+									<div class="float-right icon-circle-medium  icon-box-lg  bg-info-light mt-1">
+                                        <i class="fa fa-tags fa-fw fa-sm text-info"></i>
+                                    </div>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4">
+						<div class="col-xl-3">
 							<div class="card">
 								<div class="card-body">
 									<div class="d-inline-block">
-										<h5 class="text-muted">Hardware & Network Problem</h5>
+										<h5 class="text-muted">New</h5>
 										<?php
 											$con=mysqli_connect("localhost","root","","rskg_ticket");
 											if (mysqli_connect_errno())
@@ -146,7 +146,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
 											}
 											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT COUNT(*) AS total_hw FROM tb_ticket WHERE trouble='Hardware' AND email_user='$datax'");
+											$result = mysqli_query($con,"SELECT COUNT(*) AS total_hw FROM tb_ticket WHERE trouble='Software' AND progress='New'");
 
 											if(mysqli_num_rows($result)>0){
 												while($row = mysqli_fetch_array($result))
@@ -157,16 +157,16 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 												<?php } } mysqli_close($con); ?>
 									</div>
 									<div class="float-right icon-circle-medium  icon-box-lg  bg-secondary-light mt-1">
-										<img src="assets/images/icon/jockey_104058.png" width="35px">
-									</div>
+                                        <i class="fa fa-asterisk fa-fw fa-sm text-secondary"></i>
+                                    </div>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-4">
+						<div class="col-xl-3">
 							<div class="card">
 								<div class="card-body">
 									<div class="d-inline-block">
-										<h5 class="text-muted">Printer Problem</h5>
+										<h5 class="text-muted">On Progress</h5>
 											<?php
 											$con=mysqli_connect("localhost","root","","rskg_ticket");
 											if (mysqli_connect_errno())
@@ -174,18 +174,46 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
 											}
 											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT COUNT(*) AS total_pt FROM tb_ticket WHERE trouble='Printer' AND email_user='$datax'");
+											$result = mysqli_query($con,"SELECT COUNT(*) AS total_hw FROM tb_ticket WHERE trouble='Software' AND progress='On Progress'");
 
 											if(mysqli_num_rows($result)>0){
 												while($row = mysqli_fetch_array($result))
 												{
-													echo "<h2 class='mb-0'>".$row['total_pt'] . "</h2>";
+													echo "<h2 class='mb-0'>".$row['total_hw'] . "</h2>";
+											?>
+													
+												<?php } } mysqli_close($con); ?>
+									</div>
+									<div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
+                                        <i class="fa fa-hourglass fa-fw fa-sm text-primary"></i>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3">
+							<div class="card">
+								<div class="card-body">
+									<div class="d-inline-block">
+										<h5 class="text-muted">Done</h5>
+											<?php
+											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											if (mysqli_connect_errno())
+											{
+												echo "Failed to connect to MySQL: " . mysqli_connect_error();
+											}
+											$datax = $_SESSION['username'];
+											$result = mysqli_query($con,"SELECT COUNT(*) AS total_pti FROM tb_ticket WHERE trouble='Software' AND progress='Done'");
+
+											if(mysqli_num_rows($result)>0){
+												while($row = mysqli_fetch_array($result))
+												{
+													echo "<h2 class='mb-0'>".$row['total_pti'] . "</h2>";
 											?>
 													
 												<?php } } mysqli_close($con); ?>
 									</div>
 									<div class="float-right icon-circle-medium  icon-box-lg  bg-brand-light mt-1">
-										<img src="assets/images/icon/printer-1695681-1437194.png" width="35px">
+										<i class="fa fa-thumbs-up fa-fw fa-sm text-brand"></i>
 									</div>
 								</div>
 							</div>
@@ -201,7 +229,8 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 											<tr class="border-0">
 												<th class="border-0">Date Request</th>
 												<th class="border-0">Requset By</th>
-												<th class="border-0">Assign To</th>
+												<th class="border-0">Deadline</th>
+												<th class="border-0">Priority</th>
 												<th class="border-0">Status Ticket</th>
 											</tr>
 										</thead>
@@ -213,7 +242,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
 											}
 											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='New' ORDER BY no_tick ASC");
+											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE trouble='Software' AND progress='New' ORDER BY no_tick ASC");
 
 											if(mysqli_num_rows($result)>0){
 												while($row = mysqli_fetch_array($result))
@@ -221,7 +250,8 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 													echo "<tr>";
 													echo "<td>".tanggal_indo($row['req_date'], true) . "</td>";
 													echo "<td>".$row['req_by'] . "</td>";
-													echo "<td>".$row['assign_to'] . "</td>";
+													echo "<td>".tanggal_indo($row['due_date'], true) . "</td>";
+													echo "<td>".$row['priority'] . "</td>";
 													if ($row['progress']=='New'){
 														echo "<td><span class='badge badge-danger'>New</span></td>";
 													}elseif ($row['progress']=='On Progress') {
@@ -247,7 +277,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 											<tr class="border-0">
 												<th class="border-0">Date Request</th>
 												<th class="border-0">Requset By</th>
-												<th class="border-0">Assign To</th>
+												<th class="border-0">Update Date</th>
 												<th class="border-0">Status Ticket</th>
 											</tr>
 										</thead>
@@ -259,7 +289,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
 											}
 											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='On Progress' ORDER BY no_tick ASC");
+											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE trouble='Software' AND progress='On Progress' ORDER BY no_tick ASC");
 
 											if(mysqli_num_rows($result)>0){
 												while($row = mysqli_fetch_array($result))
@@ -267,7 +297,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 													echo "<tr>";
 													echo "<td>".tanggal_indo($row['req_date'], true) . "</td>";
 													echo "<td>".$row['req_by'] . "</td>";
-													echo "<td>".$row['assign_to'] . "</td>";
+													echo "<td>".$row['date_progress'] . "</td>";
 													if ($row['progress']=='New'){
 														echo "<td><span class='badge badge-danger'>New</span></td>";
 													}elseif ($row['progress']=='On Progress') {
@@ -293,7 +323,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 											<tr class="border-0">
 												<th class="border-0">Date Request</th>
 												<th class="border-0">Requset By</th>
-												<th class="border-0">Assign To</th>
+												<th class="border-0">Done Date</th>
 												<th class="border-0">Status Ticket</th>
 											</tr>
 										</thead>
@@ -305,7 +335,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
 											}
 											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='Done' ORDER BY no_tick ASC");
+											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE trouble='Software' AND progress='Done' ORDER BY no_tick ASC");
 
 											if(mysqli_num_rows($result)>0){
 												while($row = mysqli_fetch_array($result))
@@ -313,7 +343,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 													echo "<tr>";
 													echo "<td>".tanggal_indo($row['req_date'], true) . "</td>";
 													echo "<td>".$row['req_by'] . "</td>";
-													echo "<td>".$row['assign_to'] . "</td>";
+													echo "<td>".tanggal_indo($row['date_progress'], true) . "</td>";
 													if ($row['progress']=='New'){
 														echo "<td><span class='badge badge-danger'>New</span></td>";
 													}elseif ($row['progress']=='On Progress') {

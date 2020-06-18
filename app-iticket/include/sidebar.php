@@ -73,25 +73,25 @@ $data = mysql_fetch_array($role);
               <a class="nav-link" href="index.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-home"></i>Home</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_dashboard.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-tachometer-alt"></i>Dashboard</a>
+              <a class="nav-link" href="sw_admin_dashboard.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-tachometer-alt"></i>Dashboard</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_task_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-tags"></i>Task Ticket</a>
+              <a class="nav-link" href="sw_admin_task_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-tags"></i>Task Ticket</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_history_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa far fa-clock"></i>History Ticket</a>
+              <a class="nav-link" href="sw_admin_history_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa far fa-clock"></i>History Ticket</a>
             </li>
             <li class="nav-divider">
               Executive System
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_week.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Week</a>
+              <a class="nav-link" href="sw_admin_report_week.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Week</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_month.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Month</a>
+              <a class="nav-link" href="sw_admin_report_month.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Month</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_year.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Year</a>
+              <a class="nav-link" href="sw_admin_report_year.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Year</a>
             </li>
           <?php } ?>
           <?php if ($data['user_role'] == 'it_hardware') { ?>
@@ -102,25 +102,25 @@ $data = mysql_fetch_array($role);
               <a class="nav-link" href="index.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-home"></i>Home</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_dashboard.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-tachometer-alt"></i>Dashboard</a>
+              <a class="nav-link" href="hw_admin_dashboard.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-tachometer-alt"></i>Dashboard</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_task_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-tags"></i>Task Ticket</a>
+              <a class="nav-link" href="hw_admin_task_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-tags"></i>Task Ticket</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_history_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa far fa-clock"></i>History Ticket</a>
+              <a class="nav-link" href="hw_admin_history_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa far fa-clock"></i>History Ticket</a>
             </li>
             <li class="nav-divider">
               Executive System
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_week.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Week</a>
+              <a class="nav-link" href="hw_admin_report_week.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Week</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_month.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Month</a>
+              <a class="nav-link" href="hw_admin_report_month.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Month</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_year.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Year</a>
+              <a class="nav-link" href="hw_admin_report_year.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Year</a>
             </li>
           <?php } ?>
           <?php if ($data['user_role'] == 'printer_task') { ?>
@@ -131,25 +131,25 @@ $data = mysql_fetch_array($role);
               <a class="nav-link" href="index.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-home"></i>Home</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_dashboard.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-tachometer-alt"></i>Dashboard</a>
+              <a class="nav-link" href="pt_admin_dashboard.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-tachometer-alt"></i>Dashboard</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_task_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-tags"></i>Task Ticket</a>
+              <a class="nav-link" href="pt_admin_task_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-tags"></i>Task Ticket</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_history_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa far fa-clock"></i>History Ticket</a>
+              <a class="nav-link" href="pt_admin_history_ticket.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa far fa-clock"></i>History Ticket</a>
             </li>
             <li class="nav-divider">
               Executive System
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_week.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Week</a>
+              <a class="nav-link" href="pt_admin_report_week.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Week</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_month.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Month</a>
+              <a class="nav-link" href="pt_admin_report_month.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Month</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="admin_report_year.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Year</a>
+              <a class="nav-link" href="pt_admin_report_year.php?ntf=0" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-file"></i>Report Year</a>
             </li>
           <?php } ?>
         </ul>

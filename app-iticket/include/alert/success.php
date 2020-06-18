@@ -88,8 +88,8 @@ if ($ntf == 1) {
 	<div class="alert alert-warning alert-dismissable">
 		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 		<small>Hai, <?php echo $data['full_name'];?></label>
-		<h4><i class="fas fa-envelope"></i> Update Registrasi Berhasil!</h4>
-		<label>Data Telah di Update dan Dikirim Ke Email!</small>
+		<h4><i class="fas fa-envelope"></i> Send Email Notifikasi!</h4>
+		<label>Status Ticket telah menjadi "On Progress", Berhasil dikirim ke Pengguna!</small>
 	</div>
 	<?php
 } elseif ($ntf == 63) {

@@ -168,7 +168,7 @@ if(isset($_POST["submithardware"]))
 
   $path = 'upload/' . $_FILES["proof"]["name"];
   move_uploaded_file($_FILES["proof"]["tmp_name"], $path);
-  $message = '  <!DOCTYPE html><html lang="en"><head> <meta charset="utf-8"/> <title>ITicket Problem!</title> <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/> <meta content="" name="description"/> <meta content="" name="author"/></head><body style="font-family: Helvetica, Arial, sans-serif;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;padding:20px;"> <div style="max-width: 600px;margin: 0 auto;background-color: #ddd;padding:10px 20px;border-radius:10px;"> <h4 align="center" style="text-align:center;margin:20px 0;font-size:18px;">New Ticket Hardware Problem </h4><h4 align="center"><br>No. Ticket <b>'.$no_tick.'</b><hr><br>'.$priority.' Ticket!</h4> <p style="text-align: center;font-size: 16px;letter-spacing: .5px;">Hai, <span style="font-weight:600">'.$assign_to.'</span><br><p style="text-align: center;margin-top: 20px;"><a href="http://127.0.0.1/app-rskg/Repository-APP-Hospital/app-iticket" target="_blank" style="font-size: 16px;font-weight: 600;letter-spacing: .5px;border-radius:5px;display: inline-block;background-color: red;color: #fff !important;padding: 10px 15px;text-decoration: none;">'.$progress.'</a></p><p style="text-align: center;font-size: 14px;">Saya mengalami masalah pada hardware/network dengan dengan detail masalah:<br><b>'.$detail.'</b><br> dengan lampiran yang tertera pada Aplikasi ITicket.</p><br><p align="left">Terimakasih,<br><b><u>'.$req_by.'</u></b><br><i>'.$unit.'</i></p><hr><p style="text-align: center;margin-top: 20px;"><a href="http://127.0.0.1/app-rskg/Repository-APP-Hospital/app-iticket" target="_blank" style="font-size: 16px;font-weight: 600;letter-spacing: .5px;border-radius:5px;display: inline-block;background-color: #00acac;color: #fff !important;padding: 10px 15px;text-decoration: none;">Cek Aktivitas</a></p></div></body></html>';
+  $message = '  <!DOCTYPE html><html lang="en"><head> <meta charset="utf-8"/> <title>ITicket Problem!</title> <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/> <meta content="" name="description"/> <meta content="" name="author"/></head><body style="font-family: Helvetica, Arial, sans-serif;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;padding:20px;"> <div style="max-width: 600px;margin: 0 auto;background-color: #ddd;padding:10px 20px;border-radius:10px;"> <h4 align="center" style="text-align:center;margin:20px 0;font-size:18px;">New Ticket Hardware & Network Problem </h4><h4 align="center"><br>No. Ticket <b>'.$no_tick.'</b><hr><br>'.$priority.' Ticket!</h4> <p style="text-align: center;font-size: 16px;letter-spacing: .5px;">Hai, <span style="font-weight:600">'.$assign_to.'</span><br><p style="text-align: center;margin-top: 20px;"><a href="http://127.0.0.1/app-rskg/Repository-APP-Hospital/app-iticket" target="_blank" style="font-size: 16px;font-weight: 600;letter-spacing: .5px;border-radius:5px;display: inline-block;background-color: red;color: #fff !important;padding: 10px 15px;text-decoration: none;">'.$progress.'</a></p><p style="text-align: center;font-size: 14px;">Saya mengalami masalah pada hardware/network dengan dengan detail masalah:<br><b>'.$detail.'</b><br> dengan lampiran yang tertera pada Aplikasi ITicket.</p><br><p align="left">Terimakasih,<br><b><u>'.$req_by.'</u></b><br><i>'.$unit.'</i></p><hr><p style="text-align: center;margin-top: 20px;"><a href="http://127.0.0.1/app-rskg/Repository-APP-Hospital/app-iticket" target="_blank" style="font-size: 16px;font-weight: 600;letter-spacing: .5px;border-radius:5px;display: inline-block;background-color: #00acac;color: #fff !important;padding: 10px 15px;text-decoration: none;">Cek Aktivitas</a></p></div></body></html>';
 
   require 'class/class.phpmailer.php';
   $mail = new PHPMailer;
@@ -271,7 +271,7 @@ if(isset($_POST["submitprinter"]))
 // EDIT
 if(isset($_POST["update"]))    
 {    
-  $id_tick          = $_POST['id_tick'];
+  $id_tick       = $_POST['id_tick'];
   $no_urut_n     = $_POST['no_urut_n'];
   $tanggal_n     = $_POST['tanggal_n'];
   $no_dokumen_n  = $_POST['no_dokumen_n'];
@@ -348,7 +348,7 @@ $mail = new PHPMailer;
   $mail->WordWrap = 50;             //Sets word wrapping on the body of the message to a given number of characters
   $mail->IsHTML(true);              //Sets message type to HTML
   $mail->AddAttachment($path);          //Adds an attachment from a path on the filesystem
-  $mail->Subject = $_POST['subject'];       //Sets the Subject of the message
+  $mail->Subject = ('ITicket Delete');       //Sets the Subject of the message
   $mail->Body = $message;             //An HTML or plain text message body
   if($mail->Send())               //Send an Email. Return true on success or false on error
   {
@@ -391,6 +391,12 @@ $mail = new PHPMailer;
     height: 200px;
     background: #ffffff;
     border-radius: 100%;
+  }
+
+  .responsive img {
+    max-width:100%;
+    /*width:100%;*/
+    height: auto;
   }
 </style>
 <body>
@@ -533,7 +539,7 @@ $mail = new PHPMailer;
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <label class="modal-title">Create Ticket Hardware Problem</label>
+              <label class="modal-title">Create Ticket Hardware & Network Problem</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -638,7 +644,7 @@ $mail = new PHPMailer;
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <label class="modal-title">Create Ticket Hardware Problem</label>
+              <label class="modal-title">Create Ticket Printer Problem</label>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -750,7 +756,7 @@ $mail = new PHPMailer;
                   <a class="nav-link" id="card-pills-2" data-toggle="tab" href="#card-pill-2" role="tab" aria-controls="card-2" aria-selected="false">Tentang Software</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="card-pills-3" data-toggle="tab" href="#card-pill-3" role="tab" aria-controls="card-3" aria-selected="false">Tentang Hardware</a>
+                  <a class="nav-link" id="card-pills-3" data-toggle="tab" href="#card-pill-3" role="tab" aria-controls="card-3" aria-selected="false">Tentang Hardware & Network</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="card-pills-4" data-toggle="tab" href="#card-pill-4" role="tab" aria-controls="card-3" aria-selected="false">Tentang Printer</a>
@@ -762,7 +768,7 @@ $mail = new PHPMailer;
                 <div class="tab-pane fade show active" id="card-pill-1" role="tabpanel" aria-labelledby="card-tab-1">
                   <div class="row">
                     <div class="col-md-6">
-                      <p><h2>Panduan Aplikasi <img src="assets/images/logo/logo.png" width="100px"></h2></p>
+                      <p><h2>Panduan Aplikasi <span class="responsive"><img src="assets/images/logo/logo.png" width="100px"></span></h2></p>
                       <p>
                         Aplikasi <img src="assets/images/logo/logo.png" width="50px"> merupakan platform untuk melakukan 3 transasksi yaitu:
                         <ul>
@@ -796,12 +802,13 @@ $mail = new PHPMailer;
                         Status <img src="assets/images/logo/logo.png" width="50px"> dibagi menjadi 3, yaitu.
                         <ul>
                           <li><span class="badge badge-danger">New</span> (Ticket baru yang dibuat pengguna dan belum di lihat oleh petugas)</li>
-                          <li><span class="badge badge-primary">Open</span> (Ticket pengguna sudah di lihat oleh petugas)</li>
+                          <!-- <li><span class="badge badge-primary">Open</span> (Ticket pengguna sudah di lihat oleh petugas)</li> -->
                           <li><span class="badge badge-warning">On Progress</span> (Ticket pengguna sudah eksekusi petugas untuk diselesaikan)</li>
-                          <li><span class="badge badge-success">Done</span> (Ticket pengguna sudah diselesaikan petugas)</li>
-                          <li><span class="badge badge-info">Closed</span> (Ticket pengguna sudah selesai/ditutup/non-aktif)</li>
+                          <!-- <li><span class="badge badge-success">Done</span> (Ticket pengguna sudah diselesaikan petugas)</li> -->
+                          <li><span class="badge badge-info">Done</span> (Ticket pengguna sudah selesai/ditutup/non-aktif)</li>
                         </ul>
                       </p>
+                      <p><i><font style="color: red">Note : Setiap transaksi yang terjadi pada aplikasi <img src="assets/images/logo/logo.png" width="50px"> akan memiliki notifikasi email (pengguna & petugas)</font></i></p>
                     </div>
                   </div>
                 </div>
@@ -809,7 +816,7 @@ $mail = new PHPMailer;
                   <div class="row">
                     <div class="col-md-4">
                       <p>
-                       <img src="assets/images/icon/sf.png" width="500px">
+                       <span class="responsive"><img src="assets/images/icon/sf.png" width="500px"></span>
                      </p>
                    </div>
                    <div class="col-md-8">
@@ -832,8 +839,11 @@ $mail = new PHPMailer;
                     <li><b><i>Application Program</i> (Program Aplikasi)</b>, yaitu perangkat lunak yang memiliki fungsi tertentu, misalnya software untuk presentasi, software akuntansi, dan lain sebagainya. Beberapa contoh Program Aplikasi adalah; Microsoft Office Word, Microsoft Office Excel, MYOB, OpenOffice.org, dan lainnya.</li>
                   </ul>
                   <ul>
+                    <label>Perbaikan Sistem: SIMRS, SISMADAK dsb.</label>
+                  </ul>
+                  <ul>
                     <label>Contoh Perangkat Lunak (Software):</label>
-                    <p align="center"><img src="assets/images/icon/contoh-software.jpg"></p>
+                    <p align="center"><span class="responsive"><img src="assets/images/icon/contoh-software.jpg"></span></p>
                   </ul>
                 </div>
               </div>
@@ -842,7 +852,7 @@ $mail = new PHPMailer;
               <div class="row">
                 <div class="col-md-4">
                   <p>
-                   <img src="assets/images/icon/hw.png" width="500px">
+                   <span class="responsive"><img src="assets/images/icon/hw.png" width="500px"></span>
                  </p>
                </div>
                <div class="col-md-8">
@@ -873,8 +883,11 @@ $mail = new PHPMailer;
                   <li>Speaker: Pengeras suara</li>
                 </ul>
                 <ul>
+                    <label>Perbaikan Sistem: Koneksi wifi, Windows/Linux Trouble dsb.</label>
+                  </ul>
+                <ul>
                   <label>Contoh Perangkat Keras (Hardware):</label>
-                  <p align="center"><img src="assets/images/icon/hw1.png"></p>
+                  <p align="center"><span class="responsive"><img src="assets/images/icon/hw1.png"></span></p>
                 </ul>
               </div>
             </div>
@@ -883,7 +896,7 @@ $mail = new PHPMailer;
             <div class="row">
               <div class="col-md-4">
                 <p>
-                 <img src="assets/images/icon/printer.png" width="500px">
+                 <span class="responsive"><img src="assets/images/icon/printer.png" width="500px"></span>
                </p>
              </div>
              <div class="col-md-8">
@@ -894,8 +907,11 @@ $mail = new PHPMailer;
                 <p>Fungsi printer yang paling utama tentu saja untuk mencetak atau menyajikan data dari komputer kepada penggunanya secara langsung. Data yang dicetak ini bisa bermacam-macam, yang pertama biasanya berupa dokumen seperti surat, arsip, dan dokumen penting lainnya. Kebanyakan jenis dokumen seperti ini dibuat dengan Microsoft Office, bisa dengan Word, Excel, atau Powerpoint. Namun ada juga yang hanya menggunakan notepad sederhana.</p>
               </ul>
               <ul>
+                <label>Perbaikan Sistem: Printer Error dsb.</label>
+              </ul>
+              <ul>
                 <label>Printer Problems:</label>
-                <p align="center"><img src="assets/images/icon/maxresdefault.jpg" width="400px"></p>
+                <p align="center"><span class="responsive"><img src="assets/images/icon/maxresdefault.jpg" width="400px"></span></p>
               </ul>
             </div>
           </div>
@@ -914,7 +930,7 @@ $mail = new PHPMailer;
       <div class="card-header">
         <button class="btn btn-dark btn-flat" data-toggle="modal" data-target="#modal-add-software" title="Create Ticket"><i class="nav-icon far fa-plus-square"></i>  Software Problem
         </button>
-        <button class="btn btn-dark btn-flat" data-toggle="modal" data-target="#modal-add-hardware" title="Create Ticket"><i class="nav-icon far fa-plus-square"></i>  Hardware Problem
+        <button class="btn btn-dark btn-flat" data-toggle="modal" data-target="#modal-add-hardware" title="Create Ticket"><i class="nav-icon far fa-plus-square"></i>  Hardware & Network Problem
         </button>
         <button class="btn btn-dark btn-flat" data-toggle="modal" data-target="#modal-add-printer" title="Create Ticket"><i class="nav-icon far fa-plus-square"></i>  Printer Problem
         </button>
@@ -964,7 +980,7 @@ $mail = new PHPMailer;
                     echo "<td><span class='badge badge-danger'>New</span></td>";
                   }elseif ($row['progress']=='On Progress') {
                     echo "<td><span class='badge badge-warning'>On Progress</span></td>";
-                  }elseif ($row['progress']=='Close') {
+                  }elseif ($row['progress']=='Done') {
                     echo "<td><span class='badge badge-success'>On Progress</span></td>";
                   }
                   if ($row['date_progress']==NULL){
