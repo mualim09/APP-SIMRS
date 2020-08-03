@@ -19,7 +19,7 @@ if(isset($_POST["changepassword"]))
   }
 } 
 
-// UBAH FOTO
+// UBAH DATA
 if(isset($_POST["update"]))    
 {    
   $user_id      = $_POST['user_id'];
@@ -27,6 +27,24 @@ if(isset($_POST["update"]))
   $full_name    = $_POST['full_name'];
   $jabatan      = $_POST['jabatan'];
   $email        = $_POST['email'];
+  
+  $query = mysql_query("UPDATE tb_user SET 
+    username = '$email',
+    full_name = '$full_name',
+    jabatan = '$jabatan',
+    email = '$email'
+    WHERE user_id ='$user_id'");
+  if($query){
+    header("Location: ./login.php?ntf=600");                                                  
+  } else {
+    header("Location: ./index.php?ntf=6");  
+  }
+}
+
+// UBAH FOTO
+if(isset($_POST["updatefoto"]))    
+{    
+  $user_id      = $_POST['user_id'];
 
   $nama = $_FILES['foto']['name'];
   $file_tmp = $_FILES['foto']['tmp_name'];
@@ -34,10 +52,6 @@ if(isset($_POST["update"]))
   move_uploaded_file($file_tmp, './assets/images/user/'.$nama);
   
   $query = mysql_query("UPDATE tb_user SET 
-    username = '$username',
-    full_name = '$full_name',
-    jabatan = '$jabatan',
-    email = '$email',
     foto = '$nama'
     WHERE user_id ='$user_id'");
   if($query){
@@ -104,15 +118,17 @@ if(isset($_POST["update"]))
               </div>
             </div>
           </div>
+          
           <!-- ALERT -->
           <?php include 'include/alert/success.php' ?>
           <!-- END ALERT -->
-          <!-- UPDATE -->
-          <div class="modal fade" id="addfile<?php echo $data['user_id'];?>">
+
+          <!-- FOTO -->
+          <div class="modal fade" id="foto<?php echo $data['user_id'];?>">
             <div class="modal-dialog modal-xl">
               <div class="modal-content">
                 <div class="modal-header">
-                  <label class="modal-title">Update Profile</label>
+                  <label class="modal-title">Change Foto</label>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -132,7 +148,33 @@ if(isset($_POST["update"]))
                       <hr>
                       <label>Upload Foto</label><br>
                       <input type="file" name="foto" placeholder="Upload ...">
+                      <input type="hidden" name="user_id" value="<?php echo $data['user_id'];?>">
                     </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <button type="submit" name="updatefoto" class="btn btn-block btn-dark">Update</button>
+                      <button type="button" class="btn btn-block btn-warning" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- END FOTO -->
+
+          <!-- UPDATE -->
+          <div class="modal fade" id="addfile<?php echo $data['user_id'];?>">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <label class="modal-title">Update Profile</label>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form action="" method="POST" enctype="multipart/form-data">
+                  <div class="modal-body">
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="form-group">
@@ -205,6 +247,7 @@ if(isset($_POST["update"]))
             </div>
           </div>
           <!-- END UPDATE PASSWORD -->
+
           <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div class="card influencer-profile-data">
@@ -244,6 +287,8 @@ if(isset($_POST["update"]))
                           </span>
                           <span class=" mb-2 d-xl-inline-block d-block ml-xl-4"><?php echo $data['unit']; ?> </span>
                           <span class=" mb-2 d-xl-inline-block d-block ml-xl-4"> </span>
+                          <br>
+                          <span class="btn btn-outline-dark btn-xs" data-toggle="modal" data-target="#foto<?php echo $data['user_id'];?>" title="Edit Profile">Change Foto</span>
                           <span class="btn btn-outline-dark btn-xs" data-toggle="modal" data-target="#addfile<?php echo $data['user_id'];?>" title="Edit Profile">Edit Profile</span>
                           <span class="btn btn-outline-dark btn-xs" data-toggle="modal" data-target="#change<?php echo $data['user_id'];?>" title="Change Password">Change Password</span>
                         </p>

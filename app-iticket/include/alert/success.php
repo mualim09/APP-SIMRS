@@ -89,7 +89,7 @@ if ($ntf == 1) {
 		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 		<small>Hai, <?php echo $data['full_name'];?></label>
 		<h4><i class="fas fa-envelope"></i> Send Email Notifikasi!</h4>
-		<label>Status Ticket telah menjadi "On Progress", Berhasil dikirim ke Pengguna!</small>
+		<label>Status Ticket telah menjadi <button class="btn btn-warning">On Progress</button>, Berhasil dikirim ke Pengguna!</small>
 	</div>
 	<?php
 } elseif ($ntf == 63) {
@@ -101,16 +101,59 @@ if ($ntf == 1) {
 		<label>Data Telah di Dikirim Ke Email Peserta!</small>
 	</div>
 	<?php
-} elseif ($ntf == 100) {
+} elseif ($ntf == 63) {
+	?>
+	<div class="alert alert-warning alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<small>Hai, <?php echo $data['full_name'];?></label>
+		<h4><i class="fas fa-envelope"></i> Konfirmasi Berhasil!</h4>
+		<label>Data Telah di Dikirim Ke Email Peserta!</small>
+	</div>
+	<?php
+} elseif ($ntf == 62) {
+	?>
+	<div class="alert alert-info alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<small>Hai, <?php echo $data['full_name'];?></label>
+		<h4><i class="fas fa-envelope"></i> Send Email Notifikasi!</h4>
+		<label>Status Ticket telah menjadi <button class="btn btn-info">Done</button>, Berhasil dikirim ke Pengguna!</small>
+	</div>
+	<?php
+}  elseif ($ntf == 100) {
 	?>
 	<div class="alert alert-success alert-dismissible" role="alert">
 		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">
 				<i class="notika-icon notika-close"></i>
 			</span>
+		<img src="assets/images/header.png" width="40px">
 		</button> Hai, <a href="" class="alert-link"><?php echo $data['full_name']; ?></a>.
 		<br>
 		Selamat Datang di Aplikasi ITicket RS. Khusus Ginjal Ny. R.A. Habibie. Enjoyed!
+	</div>
+	<?php
+} elseif ($ntf == 1001) {
+	?>
+	<div class="alert alert-warning alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<h4><i class="fas fa-envelope"></i> Hai, <?php echo $data['full_name'];?></h4>
+		<label>Ticket Berhasil di Forward!</label>
+	</div>
+	<?php
+} elseif ($ntf == 121) {
+	?>
+	<div class="alert alert-info alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<h4><i class="fas fa-thumbs-up"></i> Hai, <?php echo $data['full_name'];?></h4>
+		<label>Terimakasih telah mengirim Kritik & Saran kepada Kami!<br>Kami akan selalu memperbaiki kinerja kami semakin lebih baik lagi, untuk meningkatkan <b>Kualitas Pelayan IT</b><br><br>Dari Kami,<br>IT RSKG</label>
+	</div>
+	<?php
+} elseif ($ntf == 600) {
+	?>
+	<div class="alert alert-danger alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<h4><i class="fas fa-thumbs-up"></i> Hai, Pegguna</h4>
+		<label>Anda telah mengganti Email anda yang merupakan username akun anda<br>Silahkan lakukan Login kembali, dengan memasukkan email yang telah anda ubah sebagai username.</label>
 	</div>
 	<?php
 }

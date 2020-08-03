@@ -28,9 +28,9 @@ if(isset($_POST["submit"]))
     ('','$username','$password','$user_role','$full_name','$jenis_kelamin','$email','$alamat','$no_hp','$jabatan','$unit','$date_user','$nama')
     ");
   if ($query) {
-    header("Location: ./users.php?ntf=1");  
+    header("Location: ./sa_users.php?ntf=1");  
   } else {
-    header("Location: ./users.php?ntf=6");
+    header("Location: ./sa_users.php?ntf=6");
   }
 }
 
@@ -63,7 +63,7 @@ if(isset($_POST["update"]))
     date_user = '$date_user'
     WHERE user_id ='$user_id'");
   if($query){
-    header("Location: ./users.php?ntf=4");                                                  
+    header("Location: ./sa_users.php?ntf=4");                                                  
   } else {
     echo "Updated Failed - Please contact your Administrator";
   }
@@ -79,7 +79,7 @@ if(isset($_POST["changepassword"]))
     password ='$password'
     WHERE user_id ='$user_id'");
   if($query){
-    header("Location: ./users.php?ntf=4");                                                  
+    header("Location: ./sa_users.php?ntf=4");                                                  
   } else {
     echo "Updated Failed - Please contact your Administrator";
   }
@@ -99,9 +99,9 @@ if(isset($_POST["uploadfoto"]))
     foto = '$nama'
     WHERE user_id ='$user_id'");
   if($query){
-    header("Location: ./users.php?ntf=5");                                                  
+    header("Location: ./sa_users.php?ntf=5");                                                  
   } else {
-    header("Location: ./users.php?ntf=6");  
+    header("Location: ./sa_users.php?ntf=6");  
   }
 } 
 
@@ -113,12 +113,12 @@ if(isset($_POST['delete']))
   if($user_id){
     $query = mysql_query("DELETE FROM tb_user WHERE user_id = '$user_id'");
     if($query){
-     header("Location: ./users.php?ntf=3");                     
+     header("Location: ./sa_users.php?ntf=3");                     
    } else {
-    header("Location: ./users.php?ntf=6");  
+    header("Location: ./sa_users.php?ntf=6");  
   }
 } else {
-  header("Location: ./users.php?ntf=6");  
+  header("Location: ./sa_users.php?ntf=6");  
 }
 }
 

@@ -88,6 +88,11 @@ function tanggal_indo($tanggal, $cetak_hari = false)
     background: #ffffff;
     border-radius: 100%;
   }
+
+  .iklan {
+    width: 100%;
+    height: auto;
+  }
 </style>
 <body>
   <div class="dashboard-main-wrapper">
@@ -120,7 +125,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
           <div class="card">
             <div class="card-header">
-      
+              <span class="responsive"><img src="assets/images/logo/logo.png" width="100px"></span>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -129,16 +134,19 @@ function tanggal_indo($tanggal, $cetak_hari = false)
                     <tr>
                       <th>#</th>
                       <th>No. Ticket</th>
-                      <th>Request Date</th>
-                      <th>Due Date</th>
-                      <th>Subject</th>
-                      <th>Status Priority</th>
-                      <th>Trouble About</th>
+                      <th>Request by</th>
+                      <th>Unit</th>
                       <th>Assign to</th>
+                      <th>Trouble</th>
                       <th>Progress</th>
-                      <th>Date Respon</th>
-                      <th>File</th>
-                      <th>Action</th>
+                      <th>Date request</th>
+                      <th>Date respon</th>
+                      <th>Due date</th>
+                      <th>Date done</th>
+                      <th>Subject</th>
+                      <th>Detail remark IT</th>
+                      <th>Detail laporan ticket</th>
+                      <!-- <th>Detail Perangkat</th> -->
                     </tr>
                   </thead>
                   <tbody>
@@ -149,141 +157,68 @@ function tanggal_indo($tanggal, $cetak_hari = false)
                       echo "Failed to connect to MySQL: " . mysqli_connect_error();
                     }
                     $datax = $_SESSION['username'];
-                    $result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' ORDER BY no_tick ASC");
+                    $result = mysqli_query($con,"SELECT * FROM tb_ticket_his WHERE his_email_user='$datax' ORDER BY his_id DESC");
 
                     if(mysqli_num_rows($result)>0){
                       while($row = mysqli_fetch_array($result))
                       {
                         echo "<tr>";
-                        echo "<td>".$row['id_tick'] . "</td>";
-                        echo "<td>".$row['no_tick'] . "</td>";
-                        echo "<td>".tanggal_indo($row['req_date'], true) . "</td>";
-                        echo "<td>".tanggal_indo($row['due_date'], true) . "</td>";
-                        echo "<td>".$row['subject'] . "</td>";
-                        echo "<td>".$row['priority'] . "</td>";
-                        echo "<td>".$row['trouble'] . "</td>";
-                        echo "<td>".$row['assign_to'] . "</td>";
-                        if ($row['progress']=='New'){
+                        echo "<td>".$row['his_id'] . "</td>";
+                        echo "<td>".$row['his_no_tick'] . "</td>";
+                        echo "<td>".$row['his_req_by'] . "</td>";
+                        echo "<td>".$row['his_unit'] . "</td>";
+                        echo "<td>".$row['his_assign_to'] . "</td>"; 
+                        echo "<td>".$row['his_trouble'] . "</td>"; 
+                        if ($row['his_progress']=='New'){
                           echo "<td><span class='badge badge-danger'>New</span></td>";
-                        }elseif ($row['progress']=='On Progress') {
+                        }elseif ($row['his_progress']=='On Progress') {
                           echo "<td><span class='badge badge-warning'>On Progress</span></td>";
-                        }elseif ($row['progress']=='Close') {
-                          echo "<td><span class='badge badge-success'>On Progress</span></td>";
+                        }elseif ($row['his_progress']=='Done') {
+                          echo "<td><span class='badge badge-info'>Done</span></td>";
                         }
-                        if ($row['date_progress']==NULL){
-                          echo "<td><span class='badge badge-dark'>Belum Direspon Petugas</span></td>";
-                        }else{
-                          echo "<td><span class='badge badge-dark'>".tanggal_indo($row['date_progress'], true) . "</span></td>";
+                        echo "<td><button class='btn btn-dark'><i class='fa fas fa-clock'></i> ".$row['his_req_date'] . "</button></td>";
+                        if ($row['his_progress']=='New'){
+                          echo "<td align='center'><button class='btn btn-light' title='Belum ada respon petugas'><i class='fa fas fa-hourglass'></i></button></td>";
+                        }elseif ($row['his_progress']=='On Progress') {
+                          echo "<td><button class='btn btn-dark'><i class='fa fas fa-clock'></i> ".$row['his_date_progress'] . "</button></td>";
+                        }elseif ($row['his_progress']=='Done') {
+                          echo "<td><button class='btn btn-dark'><i class='fa fas fa-clock'></i> ".$row['his_date_progress'] . "</button></td>";
                         }
-                        if ($row['proof']==NULL){
-                          echo "<td>empty</td>";
-                        }else{
+                        echo "<td><button class='btn btn-light'><i class='fa fas fa-clock'></i> ".$row['his_due_date'] . "</button></td>";
+                        if ($row['his_progress']=='New'){
+                          echo "<td align='center'><button class='btn btn-light' title='Belum ada respon petugas'><i class='fa fas fa-hourglass'></i></button></td>";
+                        }elseif ($row['his_progress']=='On Progress') {
+                          echo "<td align='center'><button class='btn btn-light' title='Ticket dalam pengerjaan'><i class='fa fas fa-hourglass'></i></button></td>";
+                        }elseif ($row['his_progress']=='Done') {
+                          echo "<td><button class='btn btn-light'><i class='fa fas fa-check'></i> ".$row['his_date_done'] . "</button></td>";
+                        }
+                        echo "<td>".$row['his_subject'] . "</td>";
+                        if ($row['his_progress']=='New'){
+                          echo "<td align='center'><button class='btn btn-light' title='Belum ada respon petugas'><i class='fa fas fa-hourglass'></i></button></td>";
+                        }elseif ($row['his_progress']=='On Progress') {
+                          echo "<td align='center'><button class='btn btn-light' title='Ticket dalam pengerjaan'><i class='fa fas fa-hourglass'></i></button></td>";
+                        }elseif ($row['his_progress']=='Done') {
                           echo "<td align='center'>
-                          <a href='./assets/lampiran/$row[proof]' target='_blank'><img src='assets/images/icon/unnamed.png' width='40px'></a>
+                          <a href='#' data-toggle='modal' data-target='#lihat$row[his_id]' title='Lihat Remark IT'><button class='btn btn-light'><i class='fa fas fa-eye'></i></button></a>
                           </td>";
                         }
-                        echo "<td width='100px'>
-                        <a href='#' data-toggle='modal' data-target='#delete$row[id_tick]' title='Delete'><span class='badge badge-danger'><i class='fas fa-times'></i> </span></a>
-                        </td>";
+                        if ($row['his_detail']==NULL) {
+                          echo "<td>Tidak ada penjelasan</td>";
+                        }else{
+                          echo "<td align='center'>
+                          <a href='#' data-toggle='modal' data-target='#detail$row[his_id]' title='Lihat Detail'><button class='btn btn-light'><i class='fa fas fa-eye'></i></button></a>
+                          </td>";
+                        }
+                        // echo "<td>".$row['his_detail'] . "</td>";
+                        // echo "<td>".$row['his_id_perangkat'] . "</td>";
                         echo "</tr>";
                         ?>
-                        <!-- UPDATE -->
-                        <!-- <div class="modal fade" id="edit<?php echo $row['id_tick'];?>" role="dialog">
-                          <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <label class="modal-title">Update Ticket</label>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <form action="" method="POST">
-                                <div class="modal-body">
-                                  <div class="row">
-                                    <div class="col-sm-12">
-                                      <div class="form-group">
-                                        <label>No. Urut</label>
-                                        <input type="text" class="form-control" name="no_urut_n" placeholder="No. Ururt ..." value="<?php echo $row['no_urut_n']; ?>">
-                                        <input type="hidden" class="form-control" name="id_tick" value="<?php echo $row['id_tick']; ?>">
-                                        <input type="hidden" class="form-control" name="date_n" value="<?php echo $row['date_n']; ?>">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-sm-12">
-                                      <div class="form-group">
-                                        <label>Tanggal</label>
-                                        <input type="date" class="form-control" name="tanggal_n" value="<?php echo $row['tanggal_n']; ?>">
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                      <div class="form-group">
-                                        <label>No. Dokumen</label>
-                                        <input type="text" class="form-control" name="no_dokumen_n" placeholder="No. Dokumen ..." value="<?php echo $row['no_dokumen_n']; ?>">
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                      <div class="form-group">
-                                        <label>Judul</label>
-                                        <input type="text" class="form-control" name="judul_n" placeholder="Judul ..." value="<?php echo $row['judul_n']; ?>">
-                                      </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                      <div class="form-group">
-                                        <label>Bagian/Instalasi/Komite</label>
-                                        <select name="bagian_n" class="form-control" required="required">
-                                          <option value="<?php echo $row['bagian_n']; ?>"><?php echo $row['bagian_n']; ?></option>
-                                          <option value=""></option>
-                                          <?php
-                                                                        //Membuat coneksi ke database 
-                                          $con = mysqli_connect("localhost",'root',"","rskg_dpa");
-                                          if (!$con){
-                                            die("coneksi database gagal:".mysqli_connect_error());
-                                          }
-
-                                                                        //Perintah sql untuk menampilkan semua data pada tabel department
-                                          $sql="SELECT * FROM tb_bagian";
-
-                                          $hasil=mysqli_query($con,$sql);
-                                          $no=0;
-                                          while ($data = mysqli_fetch_array($hasil)) {
-                                            $no++;
-                                            ?>
-                                            <option value="<?php echo $data['nama_bg'];?>"><?php echo $data['nama_bg'];?></option>
-                                            <?php 
-                                          }
-                                          ?>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-sm-12">
-                                      <div class="form-group">
-                                        <label>Keterangan</label>
-                                        <textarea class="form-control" rows="3" name="keterangan_n" placeholder="Keterangan ..."><?php echo $row['keterangan_n']; ?></textarea>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-sm-12">
-                                  <div class="form-group">
-                                    <button type="submit" name="update" class="btn btn-block btn-dark">Submit</button>
-                                    <button type="button" class="btn btn-block btn-warning" data-dismiss="modal">Close</button>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div> -->
-                        <!-- END UPDATE -->
-
-                        <!-- DELETE -->
-                        <div class="modal fade" id="delete<?php echo $row['id_tick'];?>" role="dialog">
+                        <!-- LIHAT REMARK IT -->
+                        <div class="modal fade" id="lihat<?php echo $row['his_id'];?>" role="dialog">
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <label class="modal-title">Delete Ticket</label>
+                                <label class="modal-title">Remark Petugas ITicket</label>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
@@ -291,49 +226,87 @@ function tanggal_indo($tanggal, $cetak_hari = false)
                               <div class="modal-body">
                                 <form method="post" action="">
                                   <div class="form-group">
-                                    <label>Hapus Ticket?</label>
-                                    <h6>No. Ticket : <b><u><?php echo $row['no_tick'];?></u></b></h6>
-                                    <h6>Subject : <b><u><?php echo $row['subject'];?></u></b></h6>
-                                    <h6><u>Detail Masalah</u><br><p align="justify"><?php echo $row['detail'];?></p></h6>
+                                    <label>Detail Ticket</label>
+                                    <h6>No. Ticket : <b><u><?php echo $row['his_no_tick'];?></u></b></h6>
+                                    <h6>Subject : <b><u><?php echo $row['his_subject'];?></u></b></h6>
+                                    <h6><u>Detail Masalah</u><br><p align="justify"><?php echo $row['his_detail'];?></p></h6>
+                                  </div>
+                                  <hr>
+                                  <h5 align="center">Detail Petugas ITicket</h5>
+                                  <hr>
+                                  <div class="form-group" align="center">
                                     <div class="col-sm-12">
                                       <div class="form-group">
-                                        <label>Tulis Keterangan<font style="color: red">*</font></label>
-                                        <textarea class="form-control" rows="3" name="detail" placeholder="Tulis Keterangan ..." required="required"></textarea>
+                                        <label>Remark IT</label>
+                                        <textarea class="form-control" rows="3" name="remark_it" placeholder="Remark ..." readonly="readonly"><?php echo $row['his_remark_it'];?></textarea>
                                       </div>
                                     </div>
-                                    <input type="hidden" name="id_tick" class="form-control" value="<?php echo $row['id_tick'];?>" required>
-                                    <input type="hidden" name="admin_assign" class="form-control" value="<?php echo $row['admin_assign'];?>" required>
-                                    <input type="hidden" name="no_tick" class="form-control" value="<?php echo $row['no_tick'];?>" required>
-                                    <input type="hidden" name="priority" class="form-control" value="<?php echo $row['priority'];?>" required>
-                                    <input type="hidden" name="progress" class="form-control" value="<?php echo $row['progress'];?>" required>
-                                    <input type="hidden" name="req_by" class="form-control" value="<?php echo $row['req_by'];?>" required>
-                                    <input type="hidden" name="unit" class="form-control" value="<?php echo $row['unit'];?>" required>
-                                    <input type="hidden" name="assign_to" class="form-control" value="<?php echo $row['assign_to'];?>" required>
                                   </div>
-                                  <button type="submit" name="delete" class="btn btn-danger btn-block btn-flat">Yes</button>
-                                  <button type="button" class="btn btn-warning btn-block btn-flat" data-dismiss="modal">No</button>
+                                  <div class="form-group" align="center">
+                                    <label>Lihat Lampiran Remark Petugas</label>
+                                    <br>
+                                    <?php
+                                    echo "<a href='./assets/lampiran/$row[his_remark_file]' target='_blank'><img src='assets/images/icon/unnamed.png' width='100px'></a>";
+                                    ?>
+                                  </div>
+                                  <!-- <button type="submit" name="delete" class="btn btn-danger btn-block btn-flat">Yes</button> -->
+                                  <button type="button" class="btn btn-warning btn-block btn-flat" data-dismiss="modal">Close</button>
                                 </form>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <!-- END DELETE -->
+                        <!-- END LIHAT REMARK IT -->
+
+                        <!-- DETAIL LAPORAN TICKET -->
+                        <div class="modal fade" id="detail<?php echo $row['his_id'];?>" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <label class="modal-title">Detail Laporan ITicket</label>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form method="post" action="">
+                                  <div class="form-group">
+                                    <h6>No. Ticket : <b><u><?php echo $row['his_no_tick'];?></u></b></h6>
+                                    <h6>Subject : <b><u><?php echo $row['his_subject'];?></u></b></h6>
+                                    <div class="form-group" align="center">
+                                      <div class="col-sm-12">
+                                        <div class="form-group">
+                                          <label>Detail Masalah</label>
+                                          <textarea class="form-control" rows="3" name="remark_it" placeholder="Detail Masalah ..." readonly="readonly"><?php echo $row['his_detail'];?></textarea>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button type="button" class="btn btn-warning btn-block btn-flat" data-dismiss="modal">Close</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- END DETAIL LAPORAN TICKET -->
                       <?php } } mysqli_close($con); ?>
                     </tbody>
                     <tfoot>
                       <tr>
                         <th>#</th>
                         <th>No. Ticket</th>
-                        <th>Request Date</th>
-                        <th>Due Date</th>
-                        <th>Subject</th>
-                        <th>Status Priority</th>
-                        <th>Trouble About</th>
+                        <th>Request by</th>
+                        <th>Unit</th>
                         <th>Assign to</th>
+                        <th>Trouble</th>
                         <th>Progress</th>
-                        <th>Date Respon</th>
-                        <th>File</th>
-                        <th>Action</th>
+                        <th>Date request</th>
+                        <th>Date respon</th>
+                        <th>Due date</th>
+                        <th>Date done</th>
+                        <th>Subject</th>
+                        <th>Detail remark IT</th>
+                        <th>Detail laporan ticket</th>
+                        <!-- <th>Detail Perangkat</th> -->
                       </tr>
                     </tfoot>
                   </table>

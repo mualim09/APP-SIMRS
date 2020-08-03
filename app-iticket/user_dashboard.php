@@ -55,7 +55,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 	<link rel="stylesheet" type="text/css" href="assets/vendor/datatables/css/buttons.bootstrap4.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/datatables/css/select.bootstrap4.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendor/datatables/css/fixedHeader.bootstrap4.css">
-	<title>DPA RSKG-Dashboard</title>
+	<title>ITicket - Dashboard</title>
 	<link rel="icon" type="assets/image/png" href="assets/images/logo/logo.png"/>
 </head>
 <style type="text/css">
@@ -112,25 +112,25 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Software Problem</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
-											if (mysqli_connect_errno())
-											{
-												echo "Failed to connect to MySQL: " . mysqli_connect_error();
-											}
-											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT COUNT(*) AS total_sw FROM tb_ticket WHERE trouble='Software' AND email_user='$datax'");
+										$con=mysqli_connect("localhost","root","","rskg_ticket");
+										if (mysqli_connect_errno())
+										{
+											echo "Failed to connect to MySQL: " . mysqli_connect_error();
+										}
+										$datax = $_SESSION['username'];
+										$result = mysqli_query($con,"SELECT COUNT(*) AS total_sw FROM tb_ticket WHERE trouble='Software' AND email_user='$datax'");
 
-											if(mysqli_num_rows($result)>0){
-												while($row = mysqli_fetch_array($result))
-												{
-													echo "<h2 class='mb-0'>".$row['total_sw'] . "</h2>";
-											?>
-													
-												<?php } } mysqli_close($con); ?>
+										if(mysqli_num_rows($result)>0){
+											while($row = mysqli_fetch_array($result))
+											{
+												echo "<h2 class='mb-0'>".$row['total_sw'] . "</h2>";
+												?>
+
+										<?php } } mysqli_close($con); ?>
 									</div>
-									<div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
-										<img src="assets/images/icon/unnamed.png" width="40px">
-									</div>
+										<div class="float-right">
+											<img src="assets/images/icon/unnamed.png" width="100px">
+										</div>
 								</div>
 							</div>
 						</div>
@@ -140,24 +140,24 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Hardware & Network Problem</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
-											if (mysqli_connect_errno())
-											{
-												echo "Failed to connect to MySQL: " . mysqli_connect_error();
-											}
-											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT COUNT(*) AS total_hw FROM tb_ticket WHERE trouble='Hardware' AND email_user='$datax'");
+										$con=mysqli_connect("localhost","root","","rskg_ticket");
+										if (mysqli_connect_errno())
+										{
+											echo "Failed to connect to MySQL: " . mysqli_connect_error();
+										}
+										$datax = $_SESSION['username'];
+										$result = mysqli_query($con,"SELECT COUNT(*) AS total_hw FROM tb_ticket WHERE trouble='Hardware' AND email_user='$datax'");
 
-											if(mysqli_num_rows($result)>0){
-												while($row = mysqli_fetch_array($result))
-												{
-													echo "<h2 class='mb-0'>".$row['total_hw'] . "</h2>";
-											?>
-													
-												<?php } } mysqli_close($con); ?>
+										if(mysqli_num_rows($result)>0){
+											while($row = mysqli_fetch_array($result))
+											{
+												echo "<h2 class='mb-0'>".$row['total_hw'] . "</h2>";
+												?>
+												
+										<?php } } mysqli_close($con); ?>
 									</div>
-									<div class="float-right icon-circle-medium  icon-box-lg  bg-secondary-light mt-1">
-										<img src="assets/images/icon/jockey_104058.png" width="35px">
+									<div class="float-right">
+										<img src="assets/images/icon/jockey_104058.png" width="100px">
 									</div>
 								</div>
 							</div>
@@ -167,25 +167,25 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 								<div class="card-body">
 									<div class="d-inline-block">
 										<h5 class="text-muted">Printer Problem</h5>
-											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
-											if (mysqli_connect_errno())
-											{
-												echo "Failed to connect to MySQL: " . mysqli_connect_error();
-											}
-											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT COUNT(*) AS total_pt FROM tb_ticket WHERE trouble='Printer' AND email_user='$datax'");
+										<?php
+										$con=mysqli_connect("localhost","root","","rskg_ticket");
+										if (mysqli_connect_errno())
+										{
+											echo "Failed to connect to MySQL: " . mysqli_connect_error();
+										}
+										$datax = $_SESSION['username'];
+										$result = mysqli_query($con,"SELECT COUNT(*) AS total_pt FROM tb_ticket WHERE trouble='Printer' AND email_user='$datax'");
 
-											if(mysqli_num_rows($result)>0){
-												while($row = mysqli_fetch_array($result))
-												{
-													echo "<h2 class='mb-0'>".$row['total_pt'] . "</h2>";
-											?>
-													
-												<?php } } mysqli_close($con); ?>
+										if(mysqli_num_rows($result)>0){
+											while($row = mysqli_fetch_array($result))
+											{
+												echo "<h2 class='mb-0'>".$row['total_pt'] . "</h2>";
+												?>
+
+										<?php } } mysqli_close($con); ?>
 									</div>
-									<div class="float-right icon-circle-medium  icon-box-lg  bg-brand-light mt-1">
-										<img src="assets/images/icon/printer-1695681-1437194.png" width="35px">
+									<div class="float-right">
+										<img src="assets/images/icon/printer-1695681-1437194.png" width="100px">
 									</div>
 								</div>
 							</div>
@@ -193,144 +193,148 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 					</div>
 					<div class="row">
 						<div class="col-xl-4">
-							<h5 class="card-header" style="background-color: red; color: white">List Ticket New</h5>
-							<div class="card-body p-0">
-								<div class="table-responsive">
-									<table class="table no-wrap p-table">
-										<thead class="bg-light">
-											<tr class="border-0">
-												<th class="border-0">Date Request</th>
-												<th class="border-0">Requset By</th>
-												<th class="border-0">Assign To</th>
-												<th class="border-0">Status Ticket</th>
-											</tr>
-										</thead>
-										<tbody>
-											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
-											if (mysqli_connect_errno())
+						<h5 class="card-header" style="background-color: red; color: white">List Ticket New</h5>
+						<div class="card-body p-0">
+							<div class="table-responsive">
+								<table class="table no-wrap p-table">
+									<thead class="bg-light">
+										<tr class="border-0">
+											<th class="border-0">Date Request</th>
+											<th class="border-0">Requset By</th>
+											<th class="border-0">Assign To</th>
+											<th class="border-0">Status Ticket</th>
+										</tr>
+									</thead>
+									<tbody>
+										<?php
+										$con=mysqli_connect("localhost","root","","rskg_ticket");
+										if (mysqli_connect_errno())
+										{
+											echo "Failed to connect to MySQL: " . mysqli_connect_error();
+										}
+										$datax = $_SESSION['username'];
+										$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='New' ORDER BY no_tick ASC");
+
+										if(mysqli_num_rows($result)>0){
+											while($row = mysqli_fetch_array($result))
 											{
-												echo "Failed to connect to MySQL: " . mysqli_connect_error();
-											}
-											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='New' ORDER BY no_tick ASC");
+												echo "<tr>";
+												echo "<td>".$row['req_date'] . "</td>";
+												echo "<td>".$row['req_by'] . "</td>";
+												echo "<td>".$row['assign_to'] . "</td>";
+												if ($row['progress']=='New'){
+													echo "<td><span class='badge badge-danger'>New</span></td>";
+												}elseif ($row['progress']=='On Progress') {
+													echo "<td><span class='badge badge-warning'>On Progress</span></td>";
+												}elseif ($row['progress']=='Done') {
+													echo "<td><span class='badge badge-info'>Done</span></td>";
+												}
+												echo "</tr>";
+												?>
 
-											if(mysqli_num_rows($result)>0){
-												while($row = mysqli_fetch_array($result))
-												{
-													echo "<tr>";
-													echo "<td>".tanggal_indo($row['req_date'], true) . "</td>";
-													echo "<td>".$row['req_by'] . "</td>";
-													echo "<td>".$row['assign_to'] . "</td>";
-													if ($row['progress']=='New'){
-														echo "<td><span class='badge badge-danger'>New</span></td>";
-													}elseif ($row['progress']=='On Progress') {
-														echo "<td><span class='badge badge-warning'>On Progress</span></td>";
-													}elseif ($row['progress']=='Done') {
-														echo "<td><span class='badge badge-info'>Done</span></td>";
-													}
-													echo "</tr>";
-													?>
-
-												<?php } } mysqli_close($con); ?>
-											</tbody>
-										</table>
-									</div>
-								</div>
+										<?php } } mysqli_close($con); ?>
+									</tbody>
+								</table>
 							</div>
-							<div class="col-xl-4">
-							<h5 class="card-header" style="background-color: #f3b600; color: black">List Ticket On Progress</h5>
-							<div class="card-body p-0">
-								<div class="table-responsive">
-									<table class="table no-wrap p-table">
-										<thead class="bg-light">
-											<tr class="border-0">
-												<th class="border-0">Date Request</th>
-												<th class="border-0">Requset By</th>
-												<th class="border-0">Assign To</th>
-												<th class="border-0">Status Ticket</th>
-											</tr>
-										</thead>
-										<tbody>
-											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
-											if (mysqli_connect_errno())
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<h5 class="card-header" style="background-color: #f3b600; color: black">List Ticket On Progress</h5>
+						<div class="card-body p-0">
+							<div class="table-responsive">
+								<table class="table no-wrap p-table">
+									<thead class="bg-light">
+										<tr class="border-0">
+											<th class="border-0">Date Request</th>
+											<th class="border-0">Date Respon</th>
+											<th class="border-0">Requset By</th>
+											<th class="border-0">Assign To</th>
+											<th class="border-0">Status Ticket</th>
+										</tr>
+									</thead>
+									<tbody>
+										<?php
+										$con=mysqli_connect("localhost","root","","rskg_ticket");
+										if (mysqli_connect_errno())
+										{
+											echo "Failed to connect to MySQL: " . mysqli_connect_error();
+										}
+										$datax = $_SESSION['username'];
+										$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='On Progress' ORDER BY no_tick ASC");
+
+										if(mysqli_num_rows($result)>0){
+											while($row = mysqli_fetch_array($result))
 											{
-												echo "Failed to connect to MySQL: " . mysqli_connect_error();
-											}
-											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='On Progress' ORDER BY no_tick ASC");
-
-											if(mysqli_num_rows($result)>0){
-												while($row = mysqli_fetch_array($result))
-												{
-													echo "<tr>";
-													echo "<td>".tanggal_indo($row['req_date'], true) . "</td>";
-													echo "<td>".$row['req_by'] . "</td>";
-													echo "<td>".$row['assign_to'] . "</td>";
-													if ($row['progress']=='New'){
-														echo "<td><span class='badge badge-danger'>New</span></td>";
-													}elseif ($row['progress']=='On Progress') {
-														echo "<td><span class='badge badge-warning'>On Progress</span></td>";
-													}elseif ($row['progress']=='Done') {
-														echo "<td><span class='badge badge-info'>Done</span></td>";
-													}
-													echo "</tr>";
-													?>
-													
-												<?php } } mysqli_close($con); ?>
-											</tbody>
-										</table>
-									</div>
-								</div>
+												echo "<tr>";
+												echo "<td>".$row['req_date'] . "</td>";
+												echo "<td>".$row['date_progress'] . "</td>";
+												echo "<td>".$row['req_by'] . "</td>";
+												echo "<td>".$row['assign_to'] . "</td>";
+												if ($row['progress']=='New'){
+													echo "<td><span class='badge badge-danger'>New</span></td>";
+												}elseif ($row['progress']=='On Progress') {
+													echo "<td><span class='badge badge-warning'>On Progress</span></td>";
+												}elseif ($row['progress']=='Done') {
+													echo "<td><span class='badge badge-info'>Done</span></td>";
+												}
+												echo "</tr>";
+												?>
+											
+										<?php } } mysqli_close($con); ?>
+									</tbody>
+								</table>
 							</div>
-							<div class="col-xl-4">
-							<h5 class="card-header" style="background-color: #0998b0; color: white">List Ticket Done</h5>
-							<div class="card-body p-0">
-								<div class="table-responsive">
-									<table class="table no-wrap p-table">
-										<thead class="bg-light">
-											<tr class="border-0">
-												<th class="border-0">Date Request</th>
-												<th class="border-0">Requset By</th>
-												<th class="border-0">Assign To</th>
-												<th class="border-0">Status Ticket</th>
-											</tr>
-										</thead>
-										<tbody>
-											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
-											if (mysqli_connect_errno())
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<h5 class="card-header" style="background-color: #0998b0; color: white">List Ticket Done</h5>
+						<div class="card-body p-0">
+							<div class="table-responsive">
+								<table class="table no-wrap p-table">
+									<thead class="bg-light">
+										<tr class="border-0">
+											<th class="border-0">Date Request</th>
+											<th class="border-0">Date Respon</th>
+											<th class="border-0">Date Done/Selesai</th>
+											<th class="border-0">Requset By</th>
+											<th class="border-0">Assign To</th>
+											<th class="border-0">Status Ticket</th>
+										</tr>
+									</thead>
+									<tbody>
+										<?php
+										$con=mysqli_connect("localhost","root","","rskg_ticket");
+										if (mysqli_connect_errno())
+										{
+											echo "Failed to connect to MySQL: " . mysqli_connect_error();
+										}
+										$datax = $_SESSION['username'];
+										$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='Done' ORDER BY no_tick ASC");
+
+										if(mysqli_num_rows($result)>0){
+											while($row = mysqli_fetch_array($result))
 											{
-												echo "Failed to connect to MySQL: " . mysqli_connect_error();
-											}
-											$datax = $_SESSION['username'];
-											$result = mysqli_query($con,"SELECT * FROM tb_ticket WHERE email_user='$datax' AND progress='Done' ORDER BY no_tick ASC");
-
-											if(mysqli_num_rows($result)>0){
-												while($row = mysqli_fetch_array($result))
-												{
-													echo "<tr>";
-													echo "<td>".tanggal_indo($row['req_date'], true) . "</td>";
-													echo "<td>".$row['req_by'] . "</td>";
-													echo "<td>".$row['assign_to'] . "</td>";
-													if ($row['progress']=='New'){
-														echo "<td><span class='badge badge-danger'>New</span></td>";
-													}elseif ($row['progress']=='On Progress') {
-														echo "<td><span class='badge badge-warning'>On Progress</span></td>";
-													}elseif ($row['progress']=='Done') {
-														echo "<td><span class='badge badge-info'>Done</span></td>";
-													}
-													echo "</tr>";
-													?>
-													
-												<?php } } mysqli_close($con); ?>
-											</tbody>
-										</table>
-									</div>
-								</div>
+												echo "<tr>";
+												echo "<td>".$row['req_date'] . "</td>";
+												echo "<td>".$row['date_progress'] . "</td>";
+												echo "<td>".$row['date_done'] . "</td>";
+												echo "<td>".$row['req_by'] . "</td>";
+												echo "<td>".$row['assign_to'] . "</td>";
+												if ($row['progress']=='New'){
+													echo "<td><span class='badge badge-danger'>New</span></td>";
+												}elseif ($row['progress']=='On Progress') {
+													echo "<td><span class='badge badge-warning'>On Progress</span></td>";
+												}elseif ($row['progress']=='Done') {
+													echo "<td><span class='badge badge-info'>Done</span></td>";
+												}
+												echo "</tr>";
+												?>
+											
+										<?php } } mysqli_close($con); ?>
+									</tbody>
+								</table>
 							</div>
-						</div>						
+						</div>
 					</div>
 				</div>
 			</div>

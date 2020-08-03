@@ -56,6 +56,9 @@ if (isset($_POST['login'])) {
 </head>
 <body style="background-image: url('assets/images/icon/25085.jpg'); background-repeat: no-repeat; background-position: center center;background-size: cover;padding: 0; margin-top: 5px">
   <div class="splash-container">
+    <!-- ALERT -->
+    <?php include 'include/alert/success.php' ?>
+    <!-- END ALERT -->
     <div class="card ">
       <div class="card-header text-center">
         <a href="index.html">

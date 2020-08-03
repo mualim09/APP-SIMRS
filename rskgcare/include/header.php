@@ -55,9 +55,9 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-nav" aria-controls="yummyfood-nav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
 				<div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
 					<ul class="navbar-nav" id="yummy-nav">
-						<!-- <li class="nav-item active">
-							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-						</li> -->
+						<li class="nav-item">
+							<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+						</li>
 						<!-- <li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
 							<div class="dropdown-menu" aria-labelledby="yummyDropdown">
@@ -67,22 +67,22 @@
 								<a class="dropdown-item" href="static.html">Static Page</a>
 								<a class="dropdown-item" href="contact.html">Contact</a>
 							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Categories</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="archive.html">Archive</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
 						</li> -->
+						<li class="nav-item">
+							<a class="nav-link" href="#">Perpustakaan RSKG</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Archive Dokumen</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Artikel</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="buletin.php">Buletin</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kontak</a>
+						</li>
 					</ul>
 				</div>
 			</nav>

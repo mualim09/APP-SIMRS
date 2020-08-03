@@ -289,6 +289,16 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
+						<img src="assets/img/all-rs/logo/iticket.png" alt="">
+						<div class="catagory-title">
+							<a href="http://192.168.55.164/app-iticket/" target="_blank">
+								<h5>Open</h5>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

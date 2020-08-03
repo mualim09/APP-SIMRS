@@ -1,0 +1,20 @@
+Selamat malam bapak/ibu pengguna sistem informasi RS. Khusus Ginjal Ny. R.A Habibie,
+untuk meningkatkan kualiatas respon dan pelayanan IT terhadap permasalahan yang terjadi pada sistem (software,hardware & printer).
+kami selaku tim IT, ingin memperbaiki dan meningkatkan kualiatas layanan kami terhadap infrastruktur IT yang bapak/ibu gunakan di Rumah Sakit.
+Kami menyediakan media berbasis Web Base yang bapak/dapat akses melalui portal RSKGCARE, dengan link sebagai berikut:
+local IP: http://192.168.55.164 atau public IP: http://203.210.84.231:164
+Bapak/ibu dapat mencari Aplikasi ITicket, ITicket meruapakan media yang akan kita gunakan dari hari ini dan kedepannya sebagai
+layanan perbaikan, pemberitahuan dan permintaan terhadap infrastruktur RSKG Ny. R.A. Habibie.
+Silahkan bapak/ibu download atau lihat panduan ITicket pada attachment dibawah ini, atau buka link sebagai berikut:
+local IP: http://192.168.55.164/panduan.php atau public IP: http://203.210.84.231:164/panduan.php
+
+Note: 
+- Tim IT akan memprioritaskan report bapak/ibu dari aplikasi ITicket.
+- jika report disampaikan melalui WhatsApps grup ini, maka kita akan tetap menyarankan bapak/ibu untuk menginput masalah yang disampaikan digrup untuk diinput di aplikasi ITicket terlebih dahulu.
+
+Terimakasih,
+Sekian pesan dan poin yang kami dapat sampaikan
+
+Regards,
+TIM IT
+RSKG NY. R.A. Habibie
