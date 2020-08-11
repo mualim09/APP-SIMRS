@@ -112,19 +112,6 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 										</div>
 										<div class="col-sm-12">
 											<div class="form-group">
-												<label>Kategori<font style="color: red">*</font></label>
-												<select class="form-control" name="kategori" required="required">
-													<option value="">-- Pilih Kategori --</option>
-													<option value="UU Kesehatan">UU Kesehatan</option>
-													<option value="Permenkes">Permenkes</option>
-													<option value="Penelitian">Penelitian</option>
-													<option value="Biografi">Biografi</option>
-													<option value="Novel">Novel</option>
-												</select>
-											</div>
-										</div>
-										<div class="col-sm-12">
-											<div class="form-group">
 												<label>Tahun Terbit<font style="color: red">*</font></label>
 												<select name="tahun" class="form-control" id="year">
 													<option value>-- Pilih Tahun --</option>
@@ -152,6 +139,30 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 												<textarea type="text" class="form-control" name="deskripsi" placeholder="Deskripsi..." required="required"></textarea>
 												<input type="hidden" class="form-control" name="status_perpus" value="Show">
 												<input type="hidden" class="form-control" name="date_perpus" value="<?php echo date('Y-m-d') ?>">
+											</div>
+										</div>
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label>Kategori<font style="color: red">*</font></label>
+												<select name="kategori" class="form-control" required="required">
+						                          <option value="">-- Pilih Kategori --</option>
+						                          <?php
+						                          $con = mysqli_connect("localhost",'root',"","rskg_care");
+						                          if (!$con){
+						                            die("coneksi database gagal:".mysqli_connect_error());
+						                          }
+						                          $sql="SELECT * FROM tb_katperpus";
+
+						                          $hasil=mysqli_query($con,$sql);
+						                          $no=0;
+						                          while ($row = mysqli_fetch_array($hasil)) {
+						                            $no++;
+						                            ?>
+						                            <option value="<?php echo $row['kategori'];?>"><?php echo $row['kategori'];?></option>
+						                            <?php 
+						                          }
+						                          ?>
+						                        </select>
 											</div>
 										</div>
 									</div>
@@ -318,27 +329,13 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 															<span aria-hidden="true">&times;</span>
 														</button>
 													</div>
-													<?php echo form_open_multipart(site_url('AdminManageAplikasi/update/'.$row['id'])); ?>
+													<?php echo form_open_multipart(site_url('AdminManagePerpus/update/'.$row['id'])); ?>
 													<div class="modal-body">
 														<div class="row">
 															<div class="col-sm-12">
 																<div class="form-group">
 																	<label>Judul File/Dokumen/Buku<font style="color: red">*</font></label>
 																	<input type="text" class="form-control" name="judul" placeholder="Judul File/Dokumen/Buku..." value="<?php echo $row['judul']; ?>">
-																</div>
-															</div>
-															<div class="col-sm-12">
-																<div class="form-group">
-																	<label>Kategori<font style="color: red">*</font></label>
-																	<select class="form-control" name="kategori" required="required">
-																		<option value="<?php echo $row['kategori']; ?>"><?php echo $row['kategori']; ?></option>
-																		<option value="">-- Pilih Kategori --</option>
-																		<option value="UU Kesehatan">UU Kesehatan</option>
-																		<option value="Permenkes">Permenkes</option>
-																		<option value="Penelitian">Penelitian</option>
-																		<option value="Biografi">Biografi</option>
-																		<option value="Novel">Novel</option>
-																	</select>
 																</div>
 															</div>
 															<div class="col-sm-12">
@@ -369,6 +366,32 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 																<div class="form-group">
 																	<label>Deskripsi<font style="color: red">*</font></label>
 																	<textarea type="text" class="form-control" name="deskripsi" placeholder="Deskripsi..."><?php echo $row['deskripsi']; ?></textarea>
+																</div>
+															</div>
+															
+															<div class="col-sm-12">
+																<div class="form-group">
+																	<label>Kategori<font style="color: red">*</font></label>
+																	<select name="kategori" class="form-control" required="required">
+											                          <option value="<?php echo $row['kategori']; ?>"><?php echo $row['kategori']; ?></option>
+											                          <option value="">-- Pilih Kategori --</option>
+											                          <?php
+											                          $con = mysqli_connect("localhost",'root',"","rskg_care");
+											                          if (!$con){
+											                            die("coneksi database gagal:".mysqli_connect_error());
+											                          }
+											                          $sql="SELECT * FROM tb_katperpus";
+
+											                          $hasil=mysqli_query($con,$sql);
+											                          $no=0;
+											                          while ($row = mysqli_fetch_array($hasil)) {
+											                            $no++;
+											                            ?>
+											                            <option value="<?php echo $row['kategori'];?>"><?php echo $row['kategori'];?></option>
+											                            <?php 
+											                          }
+											                          ?>
+											                        </select>
 																</div>
 															</div>
 														</div>
@@ -578,7 +601,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
-							<form method="POST" action="<?php echo base_url() ?>index.php/AdminManagePerpus/createkat" enctype="multipart/form-data">
+							<form method="POST" action="<?php echo base_url() ?>index.php/AdminManagePerpus/createkat">
 								<div class="modal-body">
 									<div class="row">
 										<div class="col-sm-12">
@@ -650,7 +673,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 															<span aria-hidden="true">&times;</span>
 														</button>
 													</div>
-													<?php echo form_open_multipart(site_url('AdminManageAplikasi/updatekategori/'.$row['id'])); ?>
+													<?php echo form_open_multipart(site_url('AdminManagePerpus/updatekategori/'.$row['id'])); ?>
 													<div class="modal-body">
 														<div class="row">
 															<div class="col-sm-12">

@@ -159,7 +159,7 @@ class AdminManagePerpus extends CI_Controller {
 	public function createkat()
 	{
 		$data = array(
-			'judul' => $this->input->post('judul')
+			'kategori' => $this->input->post('kategori')
 		);
 
 		$this->M_MasterData->input_katperpust('tb_katperpus', $data);

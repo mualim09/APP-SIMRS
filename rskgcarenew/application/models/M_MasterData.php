@@ -28,6 +28,12 @@ class M_MasterData extends CI_Model{
         $this->db->insert($table,$data);
     }
 
+    // INPUT DATA KATEGORI PERPUSTAKAAN
+    function input_katperpust($table, $data)
+    {
+        $this->db->insert($table,$data);
+    }
+
 ////////////////////////////////////////////////UPDATE////////////////////////////////
     // UPDATE APLIKASI
     function update_aplikasi($table,$data,$id)
@@ -43,6 +49,12 @@ class M_MasterData extends CI_Model{
         $this->db->update($table,$data);  
     }
 
+    // UPDATE KATEGORI PERPUSTAKAAN
+    function update_katperpus($table,$data,$id)
+    {
+        $this->db->where('id', $id);
+        $this->db->update($table,$data);  
+    }
 ////////////////////////////////////////////////DELETE////////////////////////////////
     // DELETE DATA APLIKASI
     function DeleteDataAplikasi($table,$id)
@@ -50,8 +62,14 @@ class M_MasterData extends CI_Model{
         $this->db->delete($table,$id);
     }
 
-    // DELETE DATA APLIKASI
+    // DELETE DATA PERPUSTAKAAN
     function DeleteDataPerpus($table,$id)
+    {
+        $this->db->delete($table,$id);
+    }
+
+    // DELETE DATA KATEGORI PERPUSTAKAAN
+    function DeleteDataKatPerpus($table,$id)
     {
         $this->db->delete($table,$id);
     }
