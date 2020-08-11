@@ -16,23 +16,42 @@ class M_MasterData extends CI_Model{
 ////////////////////////////////////////////////GET////////////////////////////////
 
 ////////////////////////////////////////////////INPUT////////////////////////////////
-// INPUT DATA APLIKASI
+    // INPUT DATA APLIKASI
     function input_aplikasi($table, $data)
     {
         $this->db->insert($table,$data);
     }
 
+    // INPUT DATA PERPUSTAKAAN
+    function input_perpus($table, $data)
+    {
+        $this->db->insert($table,$data);
+    }
+
 ////////////////////////////////////////////////UPDATE////////////////////////////////
-// UPDATE APLIKASI
+    // UPDATE APLIKASI
     function update_aplikasi($table,$data,$id)
     {
         $this->db->where('id', $id);
         $this->db->update($table,$data);  
     }
 
+    // UPDATE PERPUSTAKAAN
+    function update_perpus($table,$data,$id)
+    {
+        $this->db->where('id', $id);
+        $this->db->update($table,$data);  
+    }
+
 ////////////////////////////////////////////////DELETE////////////////////////////////
-// Delete data pemesanan
+    // DELETE DATA APLIKASI
     function DeleteDataAplikasi($table,$id)
+    {
+        $this->db->delete($table,$id);
+    }
+
+    // DELETE DATA APLIKASI
+    function DeleteDataPerpus($table,$id)
     {
         $this->db->delete($table,$id);
     }

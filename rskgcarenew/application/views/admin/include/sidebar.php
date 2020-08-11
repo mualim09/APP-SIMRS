@@ -13,8 +13,14 @@
           <li class="nav-item ">
             <a class="nav-link" href="<?php echo base_url()."index.php/AdminHome";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-home"></i>Home</a>
           </li>
+          <li class="nav-divider">
+            Sidebar
+          </li>
           <li class="nav-item ">
             <a class="nav-link" href="<?php echo base_url()."index.php/AdminStrukturMenu";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Struktur Menu</a>
+          </li>
+          <li class="nav-divider">
+            PER-SIDERBAR
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="<?php echo base_url()."index.php/AdminManageAplikasi";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Aplikasi</a>
@@ -23,13 +29,16 @@
             <a class="nav-link" href="<?php echo base_url()."index.php/AdminManagePerpus";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Perpustakaan</a>
           </li>
           <li class="nav-item ">
+            <a class="nav-link" href="<?php echo base_url()."index.php/AdminManagePNJ";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Panduan & Juknis</a>
+          </li>
+          <li class="nav-divider">
+            Kegiatan Ilmiah
+          </li>
+          <li class="nav-item ">
             <a class="nav-link" href="<?php echo base_url()."index.php/AdminManageArtikel";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Artikel</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="<?php echo base_url()."index.php/AdminManageBuletin";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Buletin</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="<?php echo base_url()."index.php/AdminManagePNJ";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Panduan & Juknis</a>
           </li>
         </ul>
       </div>

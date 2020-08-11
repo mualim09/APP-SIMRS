@@ -15,7 +15,9 @@ if(isset($_GET['cari'])){
 					<div class="row justify-content-center mb-5 pb-2">
 						<div class="col-md-7 heading-section text-center ftco-animate">
 							<div align="center">
-								<img src="<?php echo base_url('assets/data/img/all-rs/rskgcare.png') ?>" width="300px">
+								<font style="font-size: 34px; font-family: Montserrat ExtraBold; color: black"><b>CARI APLIKASI</b></font>
+								<font style="font-size: 34px; font-family: Montserrat ExtraBold; color: gray">.</font>
+								<hr>
 							</div>
 						</div>
 					</div>

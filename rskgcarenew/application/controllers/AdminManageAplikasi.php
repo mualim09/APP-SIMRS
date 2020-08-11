@@ -11,6 +11,7 @@ class AdminManageAplikasi extends CI_Controller {
 			redirect('Admin');
 		}
 	}
+	
 	function index(){
 		$this->load->view('admin/include/head');
 		$this->load->view('admin/ad_mg_aplikasi');

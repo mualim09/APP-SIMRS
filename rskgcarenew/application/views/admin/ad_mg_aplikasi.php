@@ -89,25 +89,25 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="row">
 										<div class="col-sm-12">
 											<div class="form-group">
-												<label>Cover</label>
+												<label>Cover<font style="color: red">*</font></label>
 												<input type="file" class="form-control" name="cover" placeholder="Menu..." required="required">
 											</div>
 										</div>	
 										<div class="col-sm-12">
 											<div class="form-group">
-												<label>Nama Aplikasi</label>
+												<label>Nama Aplikasi<font style="color: red">*</font></label>
 												<input type="text" class="form-control" name="nama_app" placeholder="Nama Aplikasi..." required="required">
 											</div>
 										</div>
 										<div class="col-sm-12">
 											<div class="form-group">
-												<label>Status Akses</label>
+												<label>Status Akses<font style="color: red">*</font></label>
 												<input type="text" class="form-control" name="status_akses" placeholder="Akses Ex:BPJS..." required="required">
 											</div>
 										</div>
 										<div class="col-sm-12">
 											<div class="form-group">
-												<label>URL</label>
+												<label>URL<font style="color: red">*</font></label>
 												<input type="text" class="form-control" name="url" placeholder="URL..." required="required">
 												<input type="hidden" class="form-control" name="status_tampilan" value="Show">
 											</div>
@@ -266,8 +266,8 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 																		<p align="center">Silahkan masukkan cover dibawah ini:</p>
 																		<input type="file" name="cover" class="form-control" required>
 																	</div>
-																	<button type="submit" name="updatefotopj" class="btn btn-danger btn-block btn-flat">Yes</button>
-																	<button type="button" class="btn btn-warning btn-block btn-flat" data-dismiss="modal">No</button>
+																	<button type="submit" name="updatefotopj" class="btn btn-danger btn-block btn-flat">Upload</button>
+																	<button type="button" class="btn btn-warning btn-block btn-flat" data-dismiss="modal">Close</button>
 																</form>
 															</div>
 														</div>

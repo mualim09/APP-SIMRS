@@ -12,7 +12,7 @@ class AdminManageBuletin extends CI_Controller {
 	}
 	function index(){
 		$this->load->view('admin/include/head');
-		$this->load->view('admin/index');
+		$this->load->view('admin/ad_mg_buletin');
 		$this->load->view('admin/include/footer');
 		$this->load->view('admin/include/thirdparty');
 	}

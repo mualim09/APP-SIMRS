@@ -6,6 +6,15 @@
 		<div id="colorlib-main">
 			<section class="ftco-section">
 				<div class="container">
+					<div class="row justify-content-center mb-5 pb-2">
+						<div class="col-md-7 heading-section text-center ftco-animate">
+							<div align="center">
+								<font style="font-size: 34px; font-family: Montserrat ExtraBold; color: black"><b>PERPUSTAKAAN</b></font>
+								<font style="font-size: 34px; font-family: Montserrat ExtraBold; color: gray">.</font>
+								<hr>
+							</div>
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-lg-8">
 							<div class="row">

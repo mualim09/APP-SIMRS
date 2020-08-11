@@ -89,13 +89,13 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="row">	
 										<div class="col-sm-12">
 											<div class="form-group">
-												<label>Menu</label>
+												<label>Menu<font style="color: red">*</font></label>
 												<input type="text" class="form-control" name="menu" placeholder="Menu...">
 											</div>
 										</div>
 										<div class="col-sm-12">
 											<div class="form-group">
-												<label>URL</label>
+												<label>URL<font style="color: red">*</font></label>
 												<input type="text" class="form-control" name="url" placeholder="URL...">
 											</div>
 										</div>
