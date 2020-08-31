@@ -1,0 +1,77 @@
+query ranking
+
+
+---------- Forwarded message ---------
+From: Sigit Trinugroho <sigittrinugrohoo@gmail.com>
+Date: Sun, 11 Nov 2018 at 18:11
+Subject: Sample Query Ranking
+To: Titok <titoksetoradityo@gmail.com>
+
+
+Dear Team,
+
+-- CREATE TABLE
+CREATE TABLE `logbook` (
+  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `kode_unit` VARCHAR(11) DEFAULT NULL,
+  `unit_kerja` VARCHAR(255) DEFAULT NULL,
+  `kode_debitur` INT(11) DEFAULT NULL,
+  `debitur` VARCHAR(255) DEFAULT NULL,
+  `limits` INT(11) DEFAULT NULL,
+  `bade` INT(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+-- INSERT DATA
+INSERT INTO `logbook` (`id`, `kode_unit`, `unit_kerja`, `kode_debitur`, `debitur`, `limits`, `bade`)
+VALUES
+	(1, '101', 'Medan', 101001, 'Ucok', 1000, 900),
+	(2, '101', 'Medan', 101002, 'Mael', 1101, 2000),
+	(3, '102', 'Surabaya', 102001, 'Koh Ahong', 50000, 700),
+	(4, '102', 'Surabaya', 102002, 'Cici', 200, 3000),
+	(5, '103', 'Sulawesi', 103001, 'Jusuf Kalla', 10000, 9000),
+	(6, '103', 'Sulawesi', 103002, 'Wauwau', 800, 200),
+	(7, '103', 'Sulawesi', 103003, 'Manusia', 500, 3000);
+
+-- CREATE VIEW TO GROUP DEBITUR PER UNIT KERJA
+CREATE VIEW IF NOT EXISTS group_unit_kerja AS
+SELECT
+	kode_unit,
+	unit_kerja,
+	count(kode_debitur) AS total_debitur,
+	sum(limits) AS limit_per_unit,
+	sum(bade) AS bade_per_unit
+FROM logbook
+GROUP BY kode_unit;
+	
+-- RANK BOBOT
+SELECT *,
+debitur_rank + limit_rank + bade_rank AS total_rank
+FROM (
+SELECT *,
+FIND_IN_SET(total_debitur, (SELECT GROUP_CONCAT(total_debitur ORDER BY total_debitur ASC) FROM group_unit_kerja )) AS debitur_rank,
+FIND_IN_SET(limit_per_unit, (SELECT GROUP_CONCAT(limit_per_unit ORDER BY limit_per_unit ASC) FROM group_unit_kerja )) AS limit_rank,
+FIND_IN_SET(bade_per_unit, (SELECT GROUP_CONCAT(bade_per_unit ORDER BY bade_per_unit ASC) FROM group_unit_kerja )) AS bade_rank
+FROM group_unit_kerja
+) t
+ORDER BY total_rank DESC;
+
+
+Regards,
+Sigit Trinugroho
+
+
+-- 
+Best Regards,
+
+Titok Seto Radityo
+Surrogate Development Tech
+Jakarta
+====================================
+Phone  : +62 813 1065 0911
+Mobile : +62 899 867 6609
+PIN    : 7CBF03DD
+Fax    : -
+Email  : titoksetoradityo@gmail.com
+Web    : http://www.sdtlab.com
+====================================
