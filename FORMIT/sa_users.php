@@ -275,7 +275,7 @@ if(isset($_POST['delete']))
                                     <option value="">-- Pilih Bagian/Instalasi/Komite --</option>
                                     <?php
                                     //Membuat coneksi ke database 
-                                    $con = mysqli_connect("localhost",'root',"","rskg_ticket");
+                                    $con = mysqli_connect("localhost",'root',"","rskg_formit");
                                     if (!$con){
                                       die("coneksi database gagal:".mysqli_connect_error());
                                     }
@@ -343,7 +343,7 @@ if(isset($_POST['delete']))
                                         </thead>
                                         <tbody>
                                             <?php
-                                            $con=mysqli_connect("localhost","root","","rskg_ticket");
+                                            $con=mysqli_connect("localhost","root","","rskg_formit");
                                             if (mysqli_connect_errno())
                                             {
                                                 echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -488,7 +488,7 @@ if(isset($_POST['delete']))
                                                                         <option value="">-- Pilih Bagian/Instalasi/Komite --</option>
                                                                         <?php
                                                                         //Membuat coneksi ke database 
-                                                                        $con = mysqli_connect("localhost",'root',"","rskg_ticket");
+                                                                        $con = mysqli_connect("localhost",'root',"","rskg_formit");
                                                                         if (!$con){
                                                                           die("coneksi database gagal:".mysqli_connect_error());
                                                                         }

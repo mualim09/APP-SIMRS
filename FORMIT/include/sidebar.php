@@ -1,11 +1,9 @@
 <?php 
 $user = $_SESSION['username'];
 mysql_connect('localhost', 'root', '');
-mysql_select_db('rskg_ticket'); 
+mysql_select_db('rskg_formit'); 
 $role = mysql_query("SELECT * FROM tb_user WHERE username = '$user' ");
 $data = mysql_fetch_array($role);
-/*VALIDATION FOR FILTER USER = ADMINISTARTOR ALL */
-/*START VALIDATION AND SHOW MENU LIST*/
 ?>
 <div class="nav-left-sidebar sidebar-dark">
   <div class="menu-list">

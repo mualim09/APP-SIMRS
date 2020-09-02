@@ -1,7 +1,7 @@
 <?php 
 
 mysql_connect('localhost', 'root', '');
-mysql_select_db('rskg_ticket'); 
+mysql_select_db('rskg_formit'); 
 $role = mysql_query("SELECT * FROM tb_user WHERE username = '$user' ");
 $data = mysql_fetch_array($role);
 
@@ -129,7 +129,7 @@ if ($ntf == 1) {
 		<img src="assets/images/header.png" width="40px">
 		</button> Hai, <a href="" class="alert-link"><?php echo $data['full_name']; ?></a>.
 		<br>
-		Selamat Datang di Aplikasi ITicket RS. Khusus Ginjal Ny. R.A. Habibie. Enjoyed!
+		Selamat Datang di Aplikasi FORMIT SIMRS RS. Khusus Ginjal Ny. R.A. Habibie. Enjoyed!
 	</div>
 	<?php
 } elseif ($ntf == 1001) {

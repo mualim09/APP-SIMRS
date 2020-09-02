@@ -113,7 +113,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Total Ticket Software</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -141,7 +141,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Total Ticket Hardware</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -169,7 +169,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Total Ticket Printer</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -197,7 +197,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Total Ticket (SUM)</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -227,7 +227,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">New Software</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -255,7 +255,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">New Hardware</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -283,7 +283,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">New Printer</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -311,7 +311,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Total New (SUM)</h5>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -341,7 +341,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">On Progress Software</h5>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -369,7 +369,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">On Progress Hardware</h5>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -397,7 +397,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">On Progress Pinter</h5>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -425,7 +425,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Total On Progress (SUM)</h5>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -455,7 +455,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Done Software</h5>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -483,7 +483,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Done Hardware</h5>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -511,7 +511,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Done Pinter</h5>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -539,7 +539,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 									<div class="d-inline-block">
 										<h5 class="text-muted">Total Done (SUM)</h5>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -579,7 +579,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 										</thead>
 										<tbody>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -626,7 +626,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 										</thead>
 										<tbody>
 										<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -675,7 +675,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
 										</thead>
 										<tbody>
 											<?php
-											$con=mysqli_connect("localhost","root","","rskg_ticket");
+											$con=mysqli_connect("localhost","root","","rskg_formit");
 											if (mysqli_connect_errno())
 											{
 												echo "Failed to connect to MySQL: " . mysqli_connect_error();

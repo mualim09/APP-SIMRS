@@ -1,4 +1,4 @@
-<?php 
+s<?php 
 include "include/connection.php";
 
 // KODE AUTO TICKET
@@ -151,7 +151,7 @@ function tanggal_indo($tanggal, $cetak_hari = false)
                   </thead>
                   <tbody>
                     <?php
-                    $con=mysqli_connect("localhost","root","","rskg_ticket");
+                    $con=mysqli_connect("localhost","root","","rskg_formit");
                     if (mysqli_connect_errno())
                     {
                       echo "Failed to connect to MySQL: " . mysqli_connect_error();
