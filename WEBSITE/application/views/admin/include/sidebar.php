@@ -14,31 +14,37 @@
             <a class="nav-link" href="<?php echo base_url()."index.php/AdminHome";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="nav-icon fas fa-home"></i>Home</a>
           </li>
           <li class="nav-divider">
-            Sidebar
+            PROFILE
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<?php echo base_url()."index.php/AdminStrukturMenu";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Struktur Menu</a>
+            <a class="nav-link" href="<?php echo base_url()."index.php/AdminProfile";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Profile</a>
           </li>
           <li class="nav-divider">
-            PER-SIDERBAR
+            PRODUK
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<?php echo base_url()."index.php/AdminManageAplikasi";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Aplikasi</a>
+            <a class="nav-link" href="<?php echo base_url()."index.php/AdminProdukJudul";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Judul Produk</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<?php echo base_url()."index.php/AdminManagePerpus";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Perpustakaan</a>
+            <a class="nav-link" href="<?php echo base_url()."index.php/AdminProdukKategori";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Produk Kategori</a>
           </li>
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="<?php echo base_url()."index.php/AdminProdukHargaSatu";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Produk & Harga I</a>
+          </li> -->
           <li class="nav-item ">
-            <a class="nav-link" href="<?php echo base_url()."index.php/AdminManagePNJ";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Panduan & Juknis</a>
+            <a class="nav-link" href="<?php echo base_url()."index.php/AdminProdukHargaDua";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Produk & Harga</a>
           </li>
           <li class="nav-divider">
-            Kegiatan Ilmiah
+            Artikel
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<?php echo base_url()."index.php/AdminManageArtikel";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Artikel</a>
+            <a class="nav-link" href="<?php echo base_url()."index.php/AdminArtikel";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Artikel</a>
+          </li>
+          <li class="nav-divider">
+            SITE ADMINISTRATOR
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="<?php echo base_url()."index.php/AdminManageBuletin";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-th-list"></i>Manage Buletin</a>
+            <a class="nav-link" href="<?php echo base_url()."index.php/AdminManageUsers";?>" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fas fa-users"></i>Manage Users</a>
           </li>
         </ul>
       </div>
