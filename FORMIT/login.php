@@ -54,14 +54,15 @@ if (isset($_POST['login'])) {
     }
   </style>
 </head>
-<body style="background-image: url('assets/images/bg/bgkota.png'); background-repeat: no-repeat; background-position: center center;background-size: cover;padding: 0; margin-top: 5px">
+<body style="background-image: url('assets/images/bg/bg-02.jpg'); background-repeat: no-repeat; background-position: center center;background-size: cover;padding: 0; margin-top: 5px">
   <div class="splash-container">
     <!-- ALERT -->
     <?php include 'include/alert/success.php' ?>
     <!-- END ALERT -->
     <div class="card ">
       <div class="card-header text-center">
-        <h3>FORMIT SIMRS</h3>
+        <h3><b>FORMIT</b> SIMRS</h3>
+        <hr>
         <p>Silahkan masuk-kan username dan password anda untuk memulai session.</p>
       </div>
       <div class="card-body">
